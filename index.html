@@ -54,7 +54,7 @@ body{
   border-bottom:1px solid var(--border);
   box-shadow:0 1px 12px rgba(44,24,16,0.06);
 }
-.nav-logo img{height:36px;width:auto;display:block}
+.nav-logo img{height:32px;width:auto;display:block;max-width:140px}
 .nav-links{display:flex;gap:1.5rem;list-style:none}
 .nav-links a{
   font-size:13px;color:var(--muted);text-decoration:none;
@@ -437,7 +437,9 @@ body{
 
 /* RWD 手機 */
 @media(max-width:768px){
-  .nav{padding:.45rem 1.2rem;position:relative}
+  .nav{padding:.45rem 1.2rem;position:relative;overflow:visible}
+  .nav-logo img{height:20px;max-width:90px}
+  .nav-cta{display:none}
   .nav-links{
     display:none;position:absolute;top:100%;left:0;right:0;
     background:rgba(253,249,244,0.98);backdrop-filter:blur(16px);
@@ -841,5 +843,15 @@ render();
     });
   });
 })();</script>
+
+<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="回到頂端" style="position:fixed;bottom:24px;right:20px;z-index:999;width:44px;height:44px;border-radius:50%;border:none;background:var(--brown);color:#fff;font-size:20px;cursor:pointer;box-shadow:0 4px 16px rgba(44,24,16,.3);display:none;align-items:center;justify-content:center;">↑</button>
+<script>
+(function(){
+  var btn=document.getElementById('backToTop');
+  window.addEventListener('scroll',function(){
+    btn.style.display=window.scrollY>300?'flex':'none';
+  });
+})();
+</script>
 </body>
 </html>
