@@ -29,7 +29,7 @@ const SYSTEM_PROMPT = `你是「Cofeel 凱飛咖啡」的智慧咖啡知識庫�
 
 請以繁體中文（台灣，zh-TW）回答，切勿使用簡體字。`;
 
-const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent';
+const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 
 export default async function handler(req, res) {
   // CORS 設定
@@ -57,14 +57,8 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: '訊息格式錯誤。' });
     }
 
-    // System prompt 放入第一則 user 訊息（v1 API 相容寫法）
-    const systemMsg = { role: 'user', parts: [{ text: SYSTEM_PROMPT + '\n\n請回答：你好，請確認你已了解上述指示。' }] };
-    const systemAck = { role: 'model', parts: [{ text: '好的，我已了解。我是凱飛 AI 咖啡顧問，將以專業溫和的語氣為您服務。' }] };
-
     // 組合對話歷史 + 本次訊息
     const contents = [
-      systemMsg,
-      systemAck,
       ...history.map(m => ({
         role: m.role === 'user' ? 'user' : 'model',
         parts: [{ text: m.text }]
@@ -76,6 +70,7 @@ export default async function handler(req, res) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
+        system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
         contents,
         generationConfig: {
           temperature: 0.75,
