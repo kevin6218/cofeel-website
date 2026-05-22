@@ -29,7 +29,7 @@ const SYSTEM_PROMPT = `你是「Cofeel 凱飛咖啡」的智慧咖啡知識庫�
 
 請以繁體中文（台灣，zh-TW）回答，切勿使用簡體字。`;
 
-const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent';
+const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
 
 export default async function handler(req, res) {
   // CORS 設定
