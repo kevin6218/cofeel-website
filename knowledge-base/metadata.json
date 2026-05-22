@@ -1,0 +1,6 @@
+{
+  "name": "Cofeel 凱飛咖啡智慧咖啡知識庫與客服系統",
+  "description": "專為 Cofeel 凱飛咖啡顧客打造的精品咖啡智慧客服系統。整合單品豆知識庫、手沖溫度器具教學與互動式風味沖煮比例計算機，並能透過 AI 智慧生成專屬手沖指南與解答提問。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
