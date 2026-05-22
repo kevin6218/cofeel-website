@@ -1130,7 +1130,8 @@ render();
     showTyping();
 
     try {
-      const res = await fetch('/api/chat', {
+      const apiUrl = window.location.hostname === 'localhost' ? '/api/chat' : 'https://cofeel-website.vercel.app/api/chat';
+      const res = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: text, history: history.slice(0, -1) })
