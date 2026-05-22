@@ -857,5 +857,387 @@ render();
   });
 })();
 </script>
+
+<!-- ══════════════════════════════════════════
+     凱飛 AI 咖啡顧問 · 浮動客服元件
+     ══════════════════════════════════════════ -->
+<style>
+/* ── 浮動按鈕 ── */
+#ai-fab{
+  position:fixed;bottom:28px;right:24px;z-index:9999;
+  width:56px;height:56px;border-radius:50%;
+  background:linear-gradient(135deg,#5c2d0a,#9b5c1a);
+  color:#fff;border:none;cursor:pointer;
+  box-shadow:0 4px 18px rgba(92,45,10,.45);
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;transition:transform .2s,box-shadow .2s;
+}
+#ai-fab:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(92,45,10,.6)}
+#ai-fab .ai-fab-badge{
+  position:absolute;top:-3px;right:-3px;
+  width:14px;height:14px;border-radius:50%;
+  background:#22c55e;border:2px solid #fff;
+}
+
+/* ── 聊天面板 ── */
+#ai-panel{
+  position:fixed;bottom:96px;right:24px;z-index:9998;
+  width:370px;max-width:calc(100vw - 32px);
+  background:#fdf9f4;border-radius:18px;
+  box-shadow:0 12px 48px rgba(44,24,16,.22);
+  border:1px solid #e8ddd0;
+  display:flex;flex-direction:column;
+  overflow:hidden;
+  transform:translateY(16px) scale(.97);opacity:0;
+  pointer-events:none;
+  transition:transform .25s cubic-bezier(.34,1.56,.64,1),opacity .2s;
+  max-height:calc(100vh - 140px);
+}
+#ai-panel.open{
+  transform:translateY(0) scale(1);opacity:1;pointer-events:all;
+}
+
+/* 頂部 header */
+#ai-panel-header{
+  background:linear-gradient(135deg,#3b1a06,#7c4312);
+  color:#fff;padding:.85rem 1rem;
+  display:flex;align-items:center;gap:.7rem;flex-shrink:0;
+}
+.ai-header-icon{font-size:20px}
+.ai-header-info{flex:1}
+.ai-header-info strong{font-size:13px;display:block;font-weight:600;letter-spacing:.3px}
+.ai-header-info span{font-size:10px;opacity:.65;letter-spacing:.5px}
+#ai-panel-close{
+  background:rgba(255,255,255,.12);border:none;color:#fff;
+  width:28px;height:28px;border-radius:50%;cursor:pointer;
+  font-size:14px;display:flex;align-items:center;justify-content:center;
+  transition:background .15s;flex-shrink:0;
+}
+#ai-panel-close:hover{background:rgba(255,255,255,.25)}
+
+/* API Key 提示欄 */
+#ai-key-bar{
+  background:#fff8ed;border-bottom:1px solid #f0dfc0;
+  padding:.55rem .9rem;display:none;
+  align-items:center;gap:.5rem;flex-shrink:0;
+}
+#ai-key-bar.show{display:flex}
+#ai-key-input{
+  flex:1;font-size:11px;padding:.35rem .6rem;
+  border:1px solid #d9c4a0;border-radius:8px;
+  font-family:'Noto Sans TC',sans-serif;outline:none;
+  background:#fff;color:#3b1a06;
+}
+#ai-key-input:focus{border-color:#9b5c1a}
+#ai-key-save{
+  font-size:11px;padding:.35rem .7rem;
+  background:#7c4312;color:#fff;border:none;border-radius:8px;
+  cursor:pointer;font-family:'Noto Sans TC',sans-serif;white-space:nowrap;
+}
+#ai-key-save:hover{background:#5c2d0a}
+
+/* 訊息區 */
+#ai-messages{
+  flex:1;overflow-y:auto;padding:.8rem;
+  display:flex;flex-direction:column;gap:.6rem;
+  min-height:200px;
+}
+#ai-messages::-webkit-scrollbar{width:4px}
+#ai-messages::-webkit-scrollbar-thumb{background:#d4c0a8;border-radius:4px}
+
+.ai-msg{display:flex;gap:.5rem;align-items:flex-start;max-width:92%}
+.ai-msg.user{flex-direction:row-reverse;align-self:flex-end}
+.ai-msg-avatar{
+  width:28px;height:28px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;margin-top:2px;
+}
+.ai-msg.bot .ai-msg-avatar{background:linear-gradient(135deg,#5c2d0a,#9b5c1a);color:#fff}
+.ai-msg.user .ai-msg-avatar{background:#e8ddd0;color:#5c2d0a}
+.ai-msg-bubble{
+  font-size:12px;line-height:1.7;padding:.55rem .75rem;
+  border-radius:14px;word-break:break-word;
+}
+.ai-msg.bot .ai-msg-bubble{
+  background:#fff;border:1px solid #ede4d6;color:#3b1a06;
+  border-bottom-left-radius:4px;
+}
+.ai-msg.user .ai-msg-bubble{
+  background:linear-gradient(135deg,#5c2d0a,#9b5c1a);color:#fff;
+  border-bottom-right-radius:4px;
+}
+
+/* 打字動畫 */
+.ai-typing{display:flex;gap:4px;padding:.4rem .6rem;align-items:center}
+.ai-typing span{
+  width:6px;height:6px;background:#c49a6c;border-radius:50%;
+  animation:aiBounce .8s infinite;
+}
+.ai-typing span:nth-child(2){animation-delay:.15s}
+.ai-typing span:nth-child(3){animation-delay:.3s}
+@keyframes aiBounce{0%,80%,100%{transform:translateY(0)}40%{transform:translateY(-6px)}}
+
+/* 快速提問 */
+#ai-prompts{
+  padding:.5rem .8rem;border-top:1px solid #ede4d6;
+  display:flex;flex-wrap:wrap;gap:.35rem;flex-shrink:0;
+  background:#fdf9f4;
+}
+.ai-prompt-chip{
+  font-size:10px;padding:.25rem .7rem;
+  background:#fff;border:1px solid #d9c4a0;color:#7c4312;
+  border-radius:20px;cursor:pointer;
+  font-family:'Noto Sans TC',sans-serif;
+  transition:all .15s;white-space:nowrap;
+}
+.ai-prompt-chip:hover{background:#f5ebe0;border-color:#9b5c1a}
+
+/* 輸入列 */
+#ai-input-row{
+  display:flex;gap:.5rem;padding:.7rem;
+  border-top:1px solid #ede4d6;background:#fff;flex-shrink:0;
+}
+#ai-input{
+  flex:1;font-size:12px;padding:.5rem .75rem;
+  border:1px solid #d9c4a0;border-radius:20px;
+  font-family:'Noto Sans TC',sans-serif;outline:none;
+  background:#fdf9f4;resize:none;line-height:1.5;
+  transition:border-color .15s;
+}
+#ai-input:focus{border-color:#9b5c1a;background:#fff}
+#ai-send{
+  width:36px;height:36px;border-radius:50%;
+  background:linear-gradient(135deg,#5c2d0a,#9b5c1a);
+  color:#fff;border:none;cursor:pointer;
+  font-size:14px;flex-shrink:0;align-self:flex-end;
+  transition:transform .15s,opacity .15s;
+  display:flex;align-items:center;justify-content:center;
+}
+#ai-send:hover{transform:scale(1.08)}
+#ai-send:disabled{opacity:.4;cursor:default;transform:none}
+
+@media(max-width:480px){
+  #ai-panel{right:12px;bottom:90px;width:calc(100vw - 24px)}
+  #ai-fab{right:16px;bottom:20px}
+}
+</style>
+
+<!-- 浮動按鈕 -->
+<button id="ai-fab" title="凱飛 AI 咖啡顧問">
+  ☕
+  <span class="ai-fab-badge"></span>
+</button>
+
+<!-- 聊天面板 -->
+<div id="ai-panel">
+  <div id="ai-panel-header">
+    <span class="ai-header-icon">☕</span>
+    <div class="ai-header-info">
+      <strong>凱飛 AI 咖啡顧問</strong>
+      <span>智慧咖啡知識庫 · 手沖專家</span>
+    </div>
+    <button id="ai-panel-close">✕</button>
+  </div>
+
+  <!-- API Key 設定列（未設定時顯示） -->
+  <div id="ai-key-bar">
+    <span style="font-size:10px;color:#7c4312;white-space:nowrap">🔑 Gemini Key</span>
+    <input id="ai-key-input" type="password" placeholder="貼上您的 Gemini API Key">
+    <button id="ai-key-save">儲存</button>
+  </div>
+
+  <div id="ai-messages"></div>
+
+  <!-- 快速提問 -->
+  <div id="ai-prompts">
+    <button class="ai-prompt-chip">新手需要哪些器具？</button>
+    <button class="ai-prompt-chip">如何避免咖啡太酸？</button>
+    <button class="ai-prompt-chip">耶加雪菲怎麼沖？</button>
+    <button class="ai-prompt-chip">粉水比怎麼調？</button>
+  </div>
+
+  <div id="ai-input-row">
+    <textarea id="ai-input" rows="1" placeholder="詢問咖啡、手沖技巧…"></textarea>
+    <button id="ai-send">➤</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* ── 設定 ── */
+  const SYSTEM_PROMPT = `你是「Cofeel 凱飛咖啡」的智慧咖啡知識庫與專屬客服 AI 顧問。凱飛咖啡（Cofeel）是一家著重精品咖啡的大眾及職人品牌，致力於為消費者、手沖咖啡愛好者及一般家庭提供高品質、新鮮烘焙、精品級的咖啡，拉近精品咖啡與大眾的距離。
+
+你的職責是以大方、溫和、專業且富有咖啡職人生活美學的語氣回答顧客有關咖啡的提問：
+1. 精品咖啡豆知識：介紹單品豆特性、解析日曬/水洗/蜜處理等處理法差異。
+2. 手沖技巧：黃金粉水比(1:15)、研磨度、悶蒸(2~2.5倍水、30-40秒)。
+3. 水溫管理：淺焙91-93°C、深焙85-88°C。
+4. 器具解析：V60、Kalita Wave、手沖壺等。
+適時推薦「Cofeel 凱飛咖啡」相關商品。語氣親切，使用「您」。請以繁體中文(台灣)回答，不要使用簡體字。`;
+
+  const WELCOME = '您好！我是**凱飛 AI 咖啡顧問** ☕\n\n無論您想了解咖啡豆風味、手沖技巧、還是挑選適合自己的咖啡，都歡迎直接提問！';
+  const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
+
+  /* ── 元素 ── */
+  const fab = document.getElementById('ai-fab');
+  const panel = document.getElementById('ai-panel');
+  const closeBtn = document.getElementById('ai-panel-close');
+  const keyBar = document.getElementById('ai-key-bar');
+  const keyInput = document.getElementById('ai-key-input');
+  const keySave = document.getElementById('ai-key-save');
+  const msgBox = document.getElementById('ai-messages');
+  const input = document.getElementById('ai-input');
+  const sendBtn = document.getElementById('ai-send');
+  const chips = document.querySelectorAll('.ai-prompt-chip');
+
+  /* ── 狀態 ── */
+  let isOpen = false;
+  let isLoading = false;
+  let history = [];
+  let initialized = false;
+
+  /* ── 工具函式 ── */
+  function getKey(){ return localStorage.getItem('cofeel_gemini_key') || ''; }
+
+  function mdToHtml(text){
+    return text
+      .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+      .replace(/\*(.+?)\*/g,'<em>$1</em>')
+      .replace(/`(.+?)`/g,'<code style="background:#f5ebe0;padding:1px 5px;border-radius:4px;font-size:11px">$1</code>')
+      .replace(/^#{1,3}\s+(.+)$/gm,'<strong>$1</strong>')
+      .replace(/^[-*]\s+(.+)$/gm,'• $1')
+      .replace(/\n/g,'<br>');
+  }
+
+  function appendMsg(role, text){
+    const div = document.createElement('div');
+    div.className = 'ai-msg ' + (role === 'user' ? 'user' : 'bot');
+    const icon = role === 'user' ? '👤' : '☕';
+    div.innerHTML = `<div class="ai-msg-avatar">${icon}</div><div class="ai-msg-bubble">${mdToHtml(text)}</div>`;
+    msgBox.appendChild(div);
+    msgBox.scrollTop = msgBox.scrollHeight;
+    return div;
+  }
+
+  function showTyping(){
+    const div = document.createElement('div');
+    div.className = 'ai-msg bot';
+    div.id = 'ai-typing';
+    div.innerHTML = '<div class="ai-msg-avatar">☕</div><div class="ai-msg-bubble"><div class="ai-typing"><span></span><span></span><span></span></div></div>';
+    msgBox.appendChild(div);
+    msgBox.scrollTop = msgBox.scrollHeight;
+  }
+
+  function removeTyping(){
+    const t = document.getElementById('ai-typing');
+    if(t) t.remove();
+  }
+
+  function setLoading(v){
+    isLoading = v;
+    sendBtn.disabled = v;
+    input.disabled = v;
+  }
+
+  /* ── 初始化訊息 ── */
+  function initChat(){
+    if(initialized) return;
+    initialized = true;
+    msgBox.innerHTML = '';
+    appendMsg('bot', WELCOME);
+    if(!getKey()) keyBar.classList.add('show');
+  }
+
+  /* ── 開關面板 ── */
+  fab.addEventListener('click', function(){
+    isOpen = !isOpen;
+    panel.classList.toggle('open', isOpen);
+    if(isOpen){ initChat(); setTimeout(() => input.focus(), 300); }
+  });
+  closeBtn.addEventListener('click', function(){
+    isOpen = false;
+    panel.classList.remove('open');
+  });
+
+  /* ── 儲存 API Key ── */
+  keySave.addEventListener('click', function(){
+    const k = keyInput.value.trim();
+    if(!k) return;
+    localStorage.setItem('cofeel_gemini_key', k);
+    keyBar.classList.remove('show');
+    keyInput.value = '';
+  });
+
+  /* ── 傳送訊息 ── */
+  async function sendMessage(text){
+    text = text.trim();
+    if(!text || isLoading) return;
+
+    const key = getKey();
+    if(!key){
+      keyBar.classList.add('show');
+      keyInput.focus();
+      appendMsg('bot', '⚠️ 請先在上方輸入您的 **Gemini API Key** 後即可開始對話。\n\n前往 [Google AI Studio](https://aistudio.google.com/apikey) 免費申請。');
+      return;
+    }
+
+    appendMsg('user', text);
+    history.push({ role:'user', parts:[{ text }] });
+    input.value = '';
+    input.style.height = 'auto';
+    setLoading(true);
+    showTyping();
+
+    try {
+      const body = {
+        system_instruction:{ parts:[{ text: SYSTEM_PROMPT }] },
+        contents: history,
+        generationConfig:{ temperature: 0.75, maxOutputTokens: 1024 }
+      };
+
+      const res = await fetch(GEMINI_URL + '?key=' + key, {
+        method:'POST',
+        headers:{ 'Content-Type':'application/json' },
+        body: JSON.stringify(body)
+      });
+
+      if(!res.ok){
+        const err = await res.json();
+        throw new Error(err.error?.message || '連線失敗 (HTTP ' + res.status + ')');
+      }
+
+      const data = await res.json();
+      const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || '（無回應）';
+      history.push({ role:'model', parts:[{ text: reply }] });
+      removeTyping();
+      appendMsg('bot', reply);
+
+    } catch(e){
+      removeTyping();
+      appendMsg('bot', '⚠️ **發生錯誤**：' + e.message + '\n\n請確認 API Key 是否正確，或稍後再試。');
+      if(e.message && e.message.includes('API_KEY')) keyBar.classList.add('show');
+    } finally {
+      setLoading(false);
+      input.focus();
+    }
+  }
+
+  /* ── 事件綁定 ── */
+  sendBtn.addEventListener('click', function(){ sendMessage(input.value); });
+
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); sendMessage(input.value); }
+  });
+
+  input.addEventListener('input', function(){
+    this.style.height = 'auto';
+    this.style.height = Math.min(this.scrollHeight, 100) + 'px';
+  });
+
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){ sendMessage(c.textContent); });
+  });
+
+})();
+</script>
 </body>
 </html>
