@@ -915,26 +915,7 @@ render();
 }
 #ai-panel-close:hover{background:rgba(255,255,255,.25)}
 
-/* API Key 提示欄 */
-#ai-key-bar{
-  background:#fff8ed;border-bottom:1px solid #f0dfc0;
-  padding:.55rem .9rem;display:none;
-  align-items:center;gap:.5rem;flex-shrink:0;
-}
-#ai-key-bar.show{display:flex}
-#ai-key-input{
-  flex:1;font-size:11px;padding:.35rem .6rem;
-  border:1px solid #d9c4a0;border-radius:8px;
-  font-family:'Noto Sans TC',sans-serif;outline:none;
-  background:#fff;color:#3b1a06;
-}
-#ai-key-input:focus{border-color:#9b5c1a}
-#ai-key-save{
-  font-size:11px;padding:.35rem .7rem;
-  background:#7c4312;color:#fff;border:none;border-radius:8px;
-  cursor:pointer;font-family:'Noto Sans TC',sans-serif;white-space:nowrap;
-}
-#ai-key-save:hover{background:#5c2d0a}
+/* API Key 提示欄 - 後端架構不需要 */
 
 /* 訊息區 */
 #ai-messages{
@@ -1039,12 +1020,6 @@ render();
     <button id="ai-panel-close">✕</button>
   </div>
 
-  <!-- API Key 設定列（未設定時顯示） -->
-  <div id="ai-key-bar">
-    <span style="font-size:10px;color:#7c4312;white-space:nowrap">🔑 Gemini Key</span>
-    <input id="ai-key-input" type="password" placeholder="貼上您的 Gemini API Key">
-    <button id="ai-key-save">儲存</button>
-  </div>
 
   <div id="ai-messages"></div>
 
@@ -1064,26 +1039,14 @@ render();
 
 <script>
 (function(){
-  /* ── 設定 ── */
-  const SYSTEM_PROMPT = `你是「Cofeel 凱飛咖啡」的智慧咖啡知識庫與專屬客服 AI 顧問。凱飛咖啡（Cofeel）是一家著重精品咖啡的大眾及職人品牌，致力於為消費者、手沖咖啡愛好者及一般家庭提供高品質、新鮮烘焙、精品級的咖啡，拉近精品咖啡與大眾的距離。
-
-你的職責是以大方、溫和、專業且富有咖啡職人生活美學的語氣回答顧客有關咖啡的提問：
-1. 精品咖啡豆知識：介紹單品豆特性、解析日曬/水洗/蜜處理等處理法差異。
-2. 手沖技巧：黃金粉水比(1:15)、研磨度、悶蒸(2~2.5倍水、30-40秒)。
-3. 水溫管理：淺焙91-93°C、深焙85-88°C。
-4. 器具解析：V60、Kalita Wave、手沖壺等。
-適時推薦「Cofeel 凱飛咖啡」相關商品。語氣親切，使用「您」。請以繁體中文(台灣)回答，不要使用簡體字。`;
-
+  /* ── 歡迎訊息（System Prompt 已移至後端 api/chat.js）── */
   const WELCOME = '您好！我是**凱飛 AI 咖啡顧問** ☕\n\n無論您想了解咖啡豆風味、手沖技巧、還是挑選適合自己的咖啡，都歡迎直接提問！';
-  const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 
   /* ── 元素 ── */
   const fab = document.getElementById('ai-fab');
   const panel = document.getElementById('ai-panel');
   const closeBtn = document.getElementById('ai-panel-close');
   const keyBar = document.getElementById('ai-key-bar');
-  const keyInput = document.getElementById('ai-key-input');
-  const keySave = document.getElementById('ai-key-save');
   const msgBox = document.getElementById('ai-messages');
   const input = document.getElementById('ai-input');
   const sendBtn = document.getElementById('ai-send');
@@ -1095,9 +1058,7 @@ render();
   let history = [];
   let initialized = false;
 
-  /* ── 工具函式 ── */
-  function getKey(){ return localStorage.getItem('cofeel_gemini_key') || ''; }
-
+  /* ── Markdown 簡易渲染 ── */
   function mdToHtml(text){
     return text
       .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
@@ -1115,7 +1076,6 @@ render();
     div.innerHTML = `<div class="ai-msg-avatar">${icon}</div><div class="ai-msg-bubble">${mdToHtml(text)}</div>`;
     msgBox.appendChild(div);
     msgBox.scrollTop = msgBox.scrollHeight;
-    return div;
   }
 
   function showTyping(){
@@ -1138,13 +1098,12 @@ render();
     input.disabled = v;
   }
 
-  /* ── 初始化訊息 ── */
+  /* ── 初始化 ── */
   function initChat(){
     if(initialized) return;
     initialized = true;
     msgBox.innerHTML = '';
     appendMsg('bot', WELCOME);
-    if(!getKey()) keyBar.classList.add('show');
   }
 
   /* ── 開關面板 ── */
@@ -1158,63 +1117,39 @@ render();
     panel.classList.remove('open');
   });
 
-  /* ── 儲存 API Key ── */
-  keySave.addEventListener('click', function(){
-    const k = keyInput.value.trim();
-    if(!k) return;
-    localStorage.setItem('cofeel_gemini_key', k);
-    keyBar.classList.remove('show');
-    keyInput.value = '';
-  });
-
-  /* ── 傳送訊息 ── */
+  /* ── 傳送訊息（呼叫後端 /api/chat）── */
   async function sendMessage(text){
     text = text.trim();
     if(!text || isLoading) return;
 
-    const key = getKey();
-    if(!key){
-      keyBar.classList.add('show');
-      keyInput.focus();
-      appendMsg('bot', '⚠️ 請先在上方輸入您的 **Gemini API Key** 後即可開始對話。\n\n前往 [Google AI Studio](https://aistudio.google.com/apikey) 免費申請。');
-      return;
-    }
-
     appendMsg('user', text);
-    history.push({ role:'user', parts:[{ text }] });
+    history.push({ role:'user', text });
     input.value = '';
     input.style.height = 'auto';
     setLoading(true);
     showTyping();
 
     try {
-      const body = {
-        system_instruction:{ parts:[{ text: SYSTEM_PROMPT }] },
-        contents: history,
-        generationConfig:{ temperature: 0.75, maxOutputTokens: 1024 }
-      };
-
-      const res = await fetch(GEMINI_URL + '?key=' + key, {
-        method:'POST',
-        headers:{ 'Content-Type':'application/json' },
-        body: JSON.stringify(body)
+      const res = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: text, history: history.slice(0, -1) })
       });
 
       if(!res.ok){
         const err = await res.json();
-        throw new Error(err.error?.message || '連線失敗 (HTTP ' + res.status + ')');
+        throw new Error(err.error || '伺服器連線失敗 (HTTP ' + res.status + ')');
       }
 
       const data = await res.json();
-      const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || '（無回應）';
-      history.push({ role:'model', parts:[{ text: reply }] });
+      const reply = data.text || '（無回應）';
+      history.push({ role:'model', text: reply });
       removeTyping();
       appendMsg('bot', reply);
 
     } catch(e){
       removeTyping();
-      appendMsg('bot', '⚠️ **發生錯誤**：' + e.message + '\n\n請確認 API Key 是否正確，或稍後再試。');
-      if(e.message && e.message.includes('API_KEY')) keyBar.classList.add('show');
+      appendMsg('bot', '⚠️ **發生錯誤**：' + e.message);
     } finally {
       setLoading(false);
       input.focus();
