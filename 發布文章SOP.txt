@@ -1,0 +1,57 @@
+========================================
+CoFeel 知識文章發布 SOP
+========================================
+
+【每次發布新文章，照這 3 步驟做】
+
+-----------------------------------------
+STEP 1｜蒐集內容（你來做，約 2 分鐘）
+-----------------------------------------
+從 Facebook 粉絲專頁找一篇好文章
+→ 點「查看更多」展開全文
+→ 全選複製
+→ 貼給 Claude（FleetView 或 claude.ai）
+
+-----------------------------------------
+STEP 2｜生成文章（Claude 自動完成）
+-----------------------------------------
+Claude 會：
+✅ 幫文章取 SEO 標題
+✅ 生成 blog/xxx.html
+✅ 更新首頁的知識專欄區塊
+✅ 更新 blog/index.html
+
+-----------------------------------------
+STEP 3｜發布上線（你來做，約 1 分鐘）
+-----------------------------------------
+開啟「命令提示字元」，切到網站資料夾：
+
+  cd C:\Users\user\Downloads\cofeel-website
+
+執行發布工具（把檔名和標題換成實際的）：
+
+  python new-article.py 檔名.html "文章標題"
+
+  範例：
+  python new-article.py yirgacheffe-guide.html "耶加雪菲完整介紹"
+
+工具會自動：
+✅ 更新 sitemap.xml
+✅ git push 到 GitHub
+✅ Vercel 自動部署（約 1 分鐘）
+✅ 提示你去 Search Console 要求索引
+
+最後去 Search Console 貼網址、按「要求建立索引」✅
+
+========================================
+就這樣！整個流程約 5 分鐘搞定一篇文章
+========================================
+
+【Search Console 位址】
+https://search.google.com/search-console
+
+【網站資料夾位址】
+C:\Users\user\Downloads\cofeel-website
+
+【Vercel 管理後台】
+https://vercel.com/dashboard
