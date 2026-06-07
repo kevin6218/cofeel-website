@@ -345,6 +345,26 @@ body{
 }
 .about-stat-label{font-size:12px;color:var(--muted);line-height:1.5}
 
+/* ── 咖啡知識專欄 ── */
+.blog-section{background:var(--bg2);border-top:1px solid var(--border)}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem;margin-top:1.8rem}
+.blog-card{
+  background:#fff;border:1px solid var(--border);border-radius:8px;
+  padding:1.4rem;display:flex;flex-direction:column;gap:.5rem;
+  transition:box-shadow .2s,transform .2s;text-decoration:none;
+}
+.blog-card:hover{box-shadow:0 8px 28px rgba(44,24,16,0.12);transform:translateY(-2px)}
+.blog-card-cat{font-size:10px;font-weight:700;color:var(--gold);background:rgba(200,134,10,0.1);display:inline-block;padding:.2rem .5rem;border-radius:2px;letter-spacing:.05em;width:fit-content}
+.blog-card h3{font-family:'Noto Serif TC',serif;font-size:14px;font-weight:700;color:var(--brown);line-height:1.6;flex:1}
+.blog-card p{font-size:12px;color:var(--muted);line-height:1.6;margin:0}
+.blog-read-more{font-size:12px;font-weight:700;color:var(--gold);margin-top:.2rem}
+.btn-outline-gold{
+  display:inline-block;border:2px solid var(--gold);color:var(--gold);
+  padding:.55rem 1.6rem;border-radius:4px;font-weight:700;font-size:14px;
+  transition:background .2s,color .2s;text-decoration:none;
+}
+.btn-outline-gold:hover{background:var(--gold);color:#fff}
+
 /* ── FAQ ── */
 .faq-wrap{border-top:1px solid var(--border)}
 .faq-list{max-width:740px;margin:1.5rem auto 0}
@@ -498,6 +518,7 @@ body{
     <li><a href="#about">品牌故事</a></li>
     <li><a href="#faq">常見問題</a></li>
     <li><a href="#store">門市資訊</a></li>
+    <li><a href="/blog/" style="color:var(--gold);font-weight:600">📖 知識專欄</a></li>
     <li><a href="https://cofeel-website-xl6u.vercel.app" target="_blank" style="color:var(--gold);font-weight:600">☕ 咖啡知識庫</a></li>
     <li><a href="https://line.me/ti/p/@cofeel" target="_blank">LINE</a></li>
     <li><a href="https://wonderful-blini-520dea.netlify.app/" target="_blank">加盟合作</a></li>
@@ -658,6 +679,44 @@ body{
         <div class="faq-q">有提供加盟合作嗎？<span class="icon">+</span></div>
         <div class="faq-a">COFeel 凱飛積極發展加盟，特別歡迎準退休族（50～65 歲）及現有小店主（烘焙坊、甜點店等）合作。自行經營省去人力成本，三大收入：微型B2B、社區訂閱制、週末咖啡體驗課。請透過 Facebook 粉絲頁聯繫朝俊。</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 咖啡知識專欄 ── -->
+<section id="blog" class="blog-section">
+  <div class="section">
+    <p class="sec-eyebrow">咖啡知識專欄</p>
+    <h2 class="sec-title">飛仔の沖煮實戰筆記</h2>
+    <p class="sec-sub">從萃取時間到黃金粉水比，把多年職人心得都寫給你</p>
+    <div class="blog-grid">
+      <a href="/blog/coffee-extraction-time.html" class="blog-card">
+        <div class="blog-card-cat">沖煮實戰</div>
+        <h3>同一包豆子怎麼味道不一樣？掌握「萃取時間」的魔法</h3>
+        <p>黃金 2–2.5 分鐘法則，搭配水溫與研磨度微調，從此每杯都完美。</p>
+        <span class="blog-read-more">閱讀全文 →</span>
+      </a>
+      <a href="/blog/cold-brew-guide.html" class="blog-card">
+        <div class="blog-card-cat">沖煮實戰</div>
+        <h3>居家零失敗！冷萃咖啡 Cold Brew 今晚準備，明天享用</h3>
+        <p>密封罐＋冷水＋新鮮豆，4 個步驟做出純淨甘甜的冰萃咖啡。</p>
+        <span class="blog-read-more">閱讀全文 →</span>
+      </a>
+      <a href="/blog/pulse-pouring.html" class="blog-card">
+        <div class="blog-card-cat">沖煮實戰</div>
+        <h3>手沖一定要「斷水」嗎？職人級風味控制法一分鐘學會</h3>
+        <p>不斷水清爽花香，斷水法層次醇厚——選對方式讓豆子說話。</p>
+        <span class="blog-read-more">閱讀全文 →</span>
+      </a>
+      <a href="/blog/coffee-ratio-guide.html" class="blog-card">
+        <div class="blog-card-cat">咖啡知識</div>
+        <h3>各器具黃金粉水比大公開！手沖、義式、冷萃比例一次搞懂</h3>
+        <p>手沖 1:15、義式 1:2、冷萃 1:10，一張表從此不靠感覺沖咖啡。</p>
+        <span class="blog-read-more">閱讀全文 →</span>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:2rem">
+      <a href="/blog/" class="btn-outline-gold">查看所有文章 →</a>
     </div>
   </div>
 </section>
