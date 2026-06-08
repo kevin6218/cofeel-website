@@ -3,11 +3,13 @@
 """
 PTT × momo 交叉表：合併兩來源關鍵字、分四象限。
 
-象限定義：
-  🟨 採購機會：PTT 討論度高 + momo 商品少（需求未滿足，最該採購）
-  🟦 紅海    ：PTT 討論度高 + momo 商品多（別人都在做，難進場）
-  🟩 沉默長銷：PTT 討論度低 + momo 商品多（穩定剛需）
-  ⬜ 未開發  ：PTT 討論度低 + momo 商品少（時機未到 / 冷門）
+⚠ 重要：PTT「聲量」目前主要來自業者 [廣宣] 推銷文，不是真實消費者討論
+（真實討論文標題很少寫具體豆款名 → 抓不到）。所以這個矩陣現在的解讀是：
+
+  🟨 採購機會：業者主推 + momo 鋪貨少（同行看好但還沒鋪滿 → 可搶先機）
+  🟦 紅海    ：業者主推 + momo 鋪貨多（已被別人佔據 → 難進場）
+  🟩 沉默長銷：業者沒推 + momo 鋪貨多（穩定剛需 → 跟著做穩贏）
+  ⬜ 未開發  ：兩邊都少（時機未到 / 冷門）
 
 門檻可調，目前：
   PTT 高 = score >= 30 或 post_count >= 2
@@ -22,10 +24,14 @@ PTT_POST_HIGH = 2
 MOMO_PRODUCT_HIGH = 3
 
 QUADRANTS = {
-    "opportunity": {"emoji": "🟨", "label": "採購機會", "priority": 1, "color": "#d97706"},
-    "red_sea":     {"emoji": "🟦", "label": "紅海",     "priority": 2, "color": "#2563eb"},
-    "silent_seller": {"emoji": "🟩", "label": "沉默長銷", "priority": 3, "color": "#16a34a"},
-    "undeveloped": {"emoji": "⬜", "label": "未開發",   "priority": 4, "color": "#94a3b8"},
+    "opportunity":   {"emoji": "🟨", "label": "業者搶推 + 鋪貨少", "short": "採購機會",
+                      "priority": 1, "color": "#d97706"},
+    "red_sea":       {"emoji": "🟦", "label": "業者搶推 + 已鋪滿", "short": "紅海",
+                      "priority": 2, "color": "#2563eb"},
+    "silent_seller": {"emoji": "🟩", "label": "業者沒推 + 賣得好", "short": "沉默長銷",
+                      "priority": 3, "color": "#16a34a"},
+    "undeveloped":   {"emoji": "⬜", "label": "兩邊都少",        "short": "未開發",
+                      "priority": 4, "color": "#94a3b8"},
 }
 
 

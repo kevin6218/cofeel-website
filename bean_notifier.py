@@ -50,10 +50,29 @@ def _ptt_section(ptt_data: dict, top_n: int = 15) -> str:
         color = CATEGORY_COLORS.get(kw["category"], "#666")
         examples_html = ""
         for ex in kw.get("examples", [])[:2]:
+            tag = ('<span style="background:#fef3c7;color:#92400e;padding:0 4px;border-radius:3px;font-size:.7em;margin-right:4px">廣宣</span>'
+                   if ex.get("is_commercial") else "")
             examples_html += (
                 f'<a href="{ex["url"]}" style="color:#666;text-decoration:none;font-size:.78em;display:block;margin-top:2px">'
-                f'  · {ex["title"][:60]}</a>'
+                f'  · {tag}{ex["title"][:55]}</a>'
             )
+
+        com_c = kw.get("commercial_count", 0)
+        dis_c = kw.get("discussion_count", 0)
+        com_p = kw.get("commercial_pushes", 0)
+        dis_p = kw.get("discussion_pushes", 0)
+
+        posts_breakdown = (
+            f'<div style="color:#4a5568">{kw["post_count"]} 篇</div>'
+            f'<div style="font-size:.7em;color:#999">'
+            f'業者 {com_c} ｜ 討論 {dis_c}</div>'
+        )
+        pushes_breakdown = (
+            f'<div style="color:#c05621;font-weight:600">+{kw["push_total"]}</div>'
+            f'<div style="font-size:.7em;color:#999">'
+            f'業者 +{com_p} ｜ 討論 +{dis_p}</div>'
+        )
+
         rows += (
             f'<tr>'
             f'<td style="padding:10px 8px;border-bottom:1px solid #e2e8f0">'
@@ -63,12 +82,8 @@ def _ptt_section(ptt_data: dict, top_n: int = 15) -> str:
             f'<td style="padding:10px 8px;border-bottom:1px solid #e2e8f0">'
             f'<span style="background:{color};color:white;padding:2px 8px;border-radius:10px;font-size:.75em">{label}</span>'
             f'</td>'
-            f'<td style="padding:10px 8px;border-bottom:1px solid #e2e8f0;text-align:right;color:#4a5568;font-size:.9em">'
-            f'{kw["post_count"]} 篇'
-            f'</td>'
-            f'<td style="padding:10px 8px;border-bottom:1px solid #e2e8f0;text-align:right;color:#c05621;font-weight:600">'
-            f'+{kw["push_total"]}'
-            f'</td>'
+            f'<td style="padding:10px 8px;border-bottom:1px solid #e2e8f0;text-align:right">{posts_breakdown}</td>'
+            f'<td style="padding:10px 8px;border-bottom:1px solid #e2e8f0;text-align:right">{pushes_breakdown}</td>'
             f'<td style="padding:10px 8px;border-bottom:1px solid #e2e8f0;text-align:right;color:#2b6cb0;font-weight:700">'
             f'{kw["score"]}'
             f'</td>'
@@ -78,15 +93,18 @@ def _ptt_section(ptt_data: dict, top_n: int = 15) -> str:
         rows = '<tr><td colspan="5" style="padding:20px;text-align:center;color:#999">(本週 PTT 沒有命中任何關鍵字)</td></tr>'
 
     return f"""
-    <h2 style="margin:30px 0 12px;font-size:1.05rem;color:#2d3748">☕ PTT coffee 板 — 本週討論熱門品項</h2>
+    <h2 style="margin:30px 0 8px;font-size:1.05rem;color:#2d3748">☕ PTT coffee 板 — 本週聲量</h2>
+    <p style="margin:0 0 10px;color:#666;font-size:.78em">
+      ⚠ 目前 PTT 聲量以「業者 [廣宣] 推銷文」為主（真實討論文標題很少寫具體豆款）。「業者」= 業者推銷、「討論」= 真實使用者文。
+    </p>
     <table style="width:100%;border-collapse:collapse;background:#fafafa;border-radius:8px;overflow:hidden">
       <thead>
         <tr style="background:#2d3748;color:white">
           <th style="padding:10px 8px;text-align:left;font-size:.8em">關鍵字 / 代表文章</th>
           <th style="padding:10px 8px;text-align:left;font-size:.8em">分類</th>
-          <th style="padding:10px 8px;text-align:right;font-size:.8em">文章數</th>
-          <th style="padding:10px 8px;text-align:right;font-size:.8em">推文</th>
-          <th style="padding:10px 8px;text-align:right;font-size:.8em">分數</th>
+          <th style="padding:10px 8px;text-align:right;font-size:.8em">文章數<br><span style="font-weight:400;font-size:.75em;opacity:.7">業者/討論</span></th>
+          <th style="padding:10px 8px;text-align:right;font-size:.8em">推文<br><span style="font-weight:400;font-size:.75em;opacity:.7">業者/討論</span></th>
+          <th style="padding:10px 8px;text-align:right;font-size:.8em">總分</th>
         </tr>
       </thead>
       <tbody>{rows}</tbody>
@@ -246,18 +264,19 @@ def _cross_ref_section(cross_items: list[dict]) -> str:
             )
         return f"""
         <div style="margin:14px 0;border-left:5px solid {q['color']};padding-left:14px">
-          <h3 style="margin:0 0 6px;color:{q['color']};font-size:1rem">{q['emoji']} {q['label']} ({len(items)})</h3>
+          <h3 style="margin:0 0 6px;color:{q['color']};font-size:1rem">{q['emoji']} {q['short']} — {q['label']} ({len(items)})</h3>
           <table style="width:100%;border-collapse:collapse">{cells}</table>
         </div>
         """
 
     return f"""
-    <h2 style="margin:30px 0 8px;font-size:1.05rem;color:#2d3748">🎯 採購決策矩陣 — PTT 討論 × momo 銷售</h2>
+    <h2 style="margin:30px 0 8px;font-size:1.05rem;color:#2d3748">🎯 採購決策矩陣 — PTT 業者聲量 × momo 鋪貨</h2>
     <p style="margin:0 0 14px;color:#666;font-size:.85em">
-      🟨 採購機會：高討論+低供給 ← <strong>優先評估</strong>　｜
-      🟦 紅海：高討論+高供給　｜
-      🟩 沉默長銷：低討論+高供給　｜
-      ⬜ 未開發：兩邊都少
+      <strong>解讀：</strong>「業者搶推」= PTT [廣宣] 文有提到（代表同行看好這支豆）。「鋪貨」= momo 商品數。<br>
+      🟨 <strong>採購機會</strong>：業者搶推但 momo 還沒鋪滿 ← 先機<br>
+      🟦 <strong>紅海</strong>：業者搶推 + momo 已鋪滿 ← 難進場<br>
+      🟩 <strong>沉默長銷</strong>：業者沒推但 momo 賣得好 ← 穩定剛需<br>
+      ⬜ <strong>未開發</strong>：兩邊都少
     </p>
     {render_group(groups.get('opportunity', []), 'opportunity')}
     {render_group(groups.get('red_sea', []), 'red_sea')}
@@ -338,9 +357,9 @@ def send_email(ptt_data: dict, trends_data: dict, momo_data: dict,
     opportunities = [it for it in (cross_items or []) if it.get("quadrant") == "opportunity"]
     subject = f"☕ 新豆週報 {date.today().isoformat()}"
     if opportunities:
-        subject += f" — 🟨 採購機會：{opportunities[0]['name']}"
+        subject += f" — 🟨 業者搶推中：{opportunities[0]['name']}"
     elif ptt_data.get("keyword_stats"):
-        subject += f" — 本週熱門：{ptt_data['keyword_stats'][0]['name']}"
+        subject += f" — 業者主推：{ptt_data['keyword_stats'][0]['name']}"
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject

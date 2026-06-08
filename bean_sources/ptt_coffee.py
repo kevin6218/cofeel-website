@@ -45,6 +45,19 @@ HEADERS = {
 DELAY_SECS = 1.2   # 每次請求間隔，避免被擋
 MAX_RETRIES = 3
 
+# 標題含這些 tag 一律排除（純板務文，無資訊價值）
+EXCLUDE_TAGS = [
+    "[公告]", "Re: [公告]",
+    "[板規]", "[置底]",
+]
+
+# 商業推銷文標籤（保留統計但分開算，並在報表標示「業者主推」）
+COMMERCIAL_TAGS = ["[廣宣]", "[廣告]"]
+
+
+def is_commercial_post(title: str) -> bool:
+    return any(tag in (title or "") for tag in COMMERCIAL_TAGS)
+
 
 def parse_push(nrec_text: str) -> int:
     """解析 PTT 推文數字串為整數。
@@ -146,22 +159,32 @@ def scrape(num_pages: int = 8) -> dict:
         next_url = prev_url
         time.sleep(DELAY_SECS)
 
-    # 過濾掉「公告」「板規」之類
+    # 過濾掉純板務文（公告/板規/置底），但「廣宣」保留並標記
+    pre_filter = len(all_posts)
     filtered = [
         p for p in all_posts
-        if not any(tag in p["title"] for tag in ["[公告]", "Re: [公告]", "[板規]", "[置底]"])
+        if not any(tag in p["title"] for tag in EXCLUDE_TAGS)
     ]
+    excluded = pre_filter - len(filtered)
+    if excluded:
+        print(f"  [PTT] 已排除 {excluded} 篇純板務文")
 
-    # 比對關鍵字
+    # 比對關鍵字 + 標記是否為商業推銷文
     for p in filtered:
         p["keywords"] = [
             {"name": kw["name"], "category": kw["category"]}
             for kw in match_keywords(p["title"])
         ]
+        p["is_commercial"] = is_commercial_post(p["title"])
 
-    # 聚合關鍵字統計
+    commercial_count = sum(1 for p in filtered if p["is_commercial"])
+    if commercial_count:
+        print(f"  [PTT] 標記 {commercial_count} 篇 [廣宣]/[廣告]（業者主推，與真實討論分開算）")
+
+    # 聚合關鍵字統計（商業 vs 真實討論分開算）
     stats: dict[str, dict] = {}
     for p in filtered:
+        is_com = p["is_commercial"]
         for kw in p["keywords"]:
             key = kw["name"]
             if key not in stats:
@@ -169,21 +192,36 @@ def scrape(num_pages: int = 8) -> dict:
                     "name": kw["name"],
                     "category": kw["category"],
                     "post_count": 0,
+                    "commercial_count": 0,
+                    "discussion_count": 0,
                     "push_total": 0,
+                    "commercial_pushes": 0,
+                    "discussion_pushes": 0,
                     "examples": [],
                 }
+            push = max(p["push"], 0)
             stats[key]["post_count"] += 1
-            stats[key]["push_total"] += max(p["push"], 0)
+            stats[key]["push_total"] += push
+            if is_com:
+                stats[key]["commercial_count"] += 1
+                stats[key]["commercial_pushes"] += push
+            else:
+                stats[key]["discussion_count"] += 1
+                stats[key]["discussion_pushes"] += push
             if len(stats[key]["examples"]) < 3:
-                stats[key]["examples"].append({"title": p["title"], "url": p["url"]})
+                stats[key]["examples"].append({
+                    "title": p["title"], "url": p["url"], "is_commercial": is_com,
+                })
 
-    # score = post_count * 5 + push_total（讓有討論的文章不要被超高推文蓋過）
+    # score = 全部，但另算 discussion_score（只用真實討論）
     for s in stats.values():
         s["score"] = s["post_count"] * 5 + s["push_total"]
+        s["discussion_score"] = s["discussion_count"] * 5 + s["discussion_pushes"]
+        s["commercial_score"] = s["commercial_count"] * 5 + s["commercial_pushes"]
 
     keyword_stats = sorted(stats.values(), key=lambda x: x["score"], reverse=True)
 
-    print(f"  [PTT] ✓ 共 {len(filtered)} 篇有效文章，命中 {len(keyword_stats)} 個關鍵字")
+    print(f"  [PTT] ✓ 共 {len(filtered)} 篇文章，命中 {len(keyword_stats)} 個關鍵字")
     return {"posts": filtered, "keyword_stats": keyword_stats}
 
 
