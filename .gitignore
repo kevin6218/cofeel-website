@@ -1,0 +1,30 @@
+# === 機密設定（含密碼/金鑰，絕對不能 commit） ===
+email_config.json
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# === 輸出結果（隨執行產生） ===
+rent_results/
+bean_results/
+
+# === 系統與編輯器 ===
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === 暫存 / 日誌 ===
+*.log
+*.tmp

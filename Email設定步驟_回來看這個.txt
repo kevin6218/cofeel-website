@@ -1,0 +1,88 @@
+==========================================================
+☕ 凱飛新豆系統 — Email 設定步驟（5 分鐘搞定）
+==========================================================
+
+目前狀況：
+  ✅ 新豆收集系統已建好、測試通過
+  ✅ Windows 排程已建好（每週一早上 8:00 自動跑）
+  ⏳ Email 寄送 ← 只差這個！
+
+
+─────────────────────────────────────────────
+步驟 1：產生 Gmail 應用程式密碼（2 分鐘）
+─────────────────────────────────────────────
+
+a. 用 Chrome 打開：
+     https://myaccount.google.com/apppasswords
+
+b. 如果頁面說「找不到此設定」→ 表示沒開兩階段驗證
+   先到 https://myaccount.google.com/signinoptions/twosv 開啟
+   然後再回到 a
+
+c. 在「應用程式名稱」欄位輸入：凱飛新豆系統
+   按「建立」
+
+d. 會跳出一組 16 碼密碼（每 4 碼一組，像 xxxx xxxx xxxx xxxx）
+   ⚠ 這組密碼只會顯示一次！立刻複製起來
+
+
+─────────────────────────────────────────────
+步驟 2：填到 email_config.json（1 分鐘）
+─────────────────────────────────────────────
+
+a. 用記事本打開（在這個資料夾）：
+     email_config.json
+
+b. 把這兩格填好：
+     "username":  ← 你的 Gmail 完整信箱
+     "password":  ← 步驟 1 拿到的 16 碼密碼（空格可保留或去掉都行）
+
+c. 儲存。完成。
+
+
+─────────────────────────────────────────────
+步驟 3：測試寄出一封（1 分鐘）
+─────────────────────────────────────────────
+
+打開 PowerShell（在這個資料夾按 Shift + 右鍵 →「在這裡開啟 PowerShell」），
+貼上這行：
+
+    python bean_finder.py --no-open --no-ptt --no-trends
+
+這會用最近一次的快取資料寄一封測試信到 kevin@marvelmax.com.tw
+（不會重抓 PTT 也不會打 Google Trends，最快）
+
+看到「[email] ✓ 已寄出到 kevin@marvelmax.com.tw」就完成了！
+
+
+─────────────────────────────────────────────
+之後就完全自動了
+─────────────────────────────────────────────
+
+每週一早上 8:00，Windows 排程會自動跑：
+  → 抓 PTT coffee 板最近 1 週討論
+  → 抓 Google Trends 台灣咖啡關鍵字
+  → 產生 HTML 報表（存在 bean_results/）
+  → 寄一封週報到 kevin@marvelmax.com.tw
+
+執行紀錄會留在：bean_results\run.log
+
+
+─────────────────────────────────────────────
+常見問題
+─────────────────────────────────────────────
+
+Q：信沒收到？
+A：先檢查垃圾信件匣。如果還是沒有，看 run.log 最後幾行。
+
+Q：想改寄信時間？
+A：在 PowerShell 跑：
+   schtasks /Change /TN "CofeelBeanWeeklyReport" /ST 09:30
+   （改成早上 9:30）
+
+Q：想停止排程？
+A：schtasks /Delete /TN "CofeelBeanWeeklyReport" /F
+
+Q：想立刻手動跑一次？
+A：schtasks /Run /TN "CofeelBeanWeeklyReport"
+   或直接雙擊 run_bean_finder.bat

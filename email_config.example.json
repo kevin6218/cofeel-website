@@ -1,0 +1,12 @@
+{
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "username": "your_gmail@gmail.com",
+  "password": "xxxx xxxx xxxx xxxx",
+  "from": "your_gmail@gmail.com",
+  "from_name": "店面收集器",
+  "to": "kevin@marvelmax.com.tw",
+
+  "_說明_password": "Gmail 必須用『應用程式密碼』，不是登入密碼。產生方式：https://myaccount.google.com/apppasswords （需先開兩階段驗證）",
+  "_說明_其他SMTP": "若用 Outlook/Office365：smtp.office365.com:587；Yahoo：smtp.mail.yahoo.com:587"
+}
