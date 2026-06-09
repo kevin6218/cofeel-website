@@ -41,6 +41,12 @@
   </url>
 
   <url>
+    <loc>https://www.cofeel.com.tw/blog/bloom-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.cofeel.com.tw/blog/pour-over-technique.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
