@@ -17,6 +17,12 @@
 
   <!-- 知識文章 -->
   <url>
+    <loc>https://www.cofeel.com.tw/blog/coffee-bean-species.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.cofeel.com.tw/blog/coffee-extraction-time.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
