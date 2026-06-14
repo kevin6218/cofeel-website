@@ -17,6 +17,42 @@
 
   <!-- 知識文章 -->
   <url>
+    <loc>https://www.cofeel.com.tw/blog/empty-stomach-coffee.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.cofeel.com.tw/blog/coffee-calcium-myth.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.cofeel.com.tw/blog/daily-coffee-limit.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.cofeel.com.tw/blog/geisha-coffee-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.cofeel.com.tw/blog/coffee-processing-methods.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.cofeel.com.tw/blog/drip-bag-vs-pour-over.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.cofeel.com.tw/blog/coffee-bean-species.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
