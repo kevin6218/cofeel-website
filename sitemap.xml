@@ -17,6 +17,24 @@
 
   <!-- 知識文章 -->
   <url>
+    <loc>https://www.cofeel.com.tw/blog/grinder-importance.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.cofeel.com.tw/blog/proffee-protein-coffee.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.cofeel.com.tw/blog/oat-milk-latte-beans.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.cofeel.com.tw/blog/empty-stomach-coffee.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
