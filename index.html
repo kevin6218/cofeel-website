@@ -507,9 +507,87 @@ body{
   .hero-pills{gap:.3rem}
   .pill{font-size:10px;padding:.25rem .6rem}
 }
+
+/* ── PROMO BAR ── */
+.promo-bar{
+  display:flex;align-items:center;justify-content:center;gap:.8rem;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:#fff;padding:.6rem 2.5rem;position:relative;
+  font-size:13px;font-weight:600;flex-wrap:wrap;text-align:center;
+}
+.promo-bar a{color:#fff;text-decoration:underline;font-weight:700;white-space:nowrap}
+.promo-bar-close{
+  position:absolute;right:.8rem;top:50%;transform:translateY(-50%);
+  background:rgba(255,255,255,.25);border:none;color:#fff;
+  width:22px;height:22px;border-radius:50%;cursor:pointer;
+  font-size:12px;line-height:1;display:flex;align-items:center;justify-content:center;
+}
+.promo-bar-close:hover{background:rgba(255,255,255,.4)}
+
+/* ── PROMO SECTION ── */
+.promo-wrap{
+  background:var(--bg3);border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+}
+.promo-card{
+  display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;margin-top:1.5rem;
+}
+.promo-badge{
+  display:inline-flex;align-items:center;gap:.4rem;
+  background:var(--brown);color:#fff;font-size:11px;font-weight:700;
+  padding:.35rem 1rem;border-radius:20px;margin-bottom:1rem;letter-spacing:.5px;
+}
+.promo-card h3{font-family:'Noto Serif TC',serif;font-size:22px;font-weight:700;color:var(--brown);margin-bottom:.6rem;line-height:1.4}
+.promo-card .promo-date{font-size:13px;color:var(--gold);font-weight:700;margin-bottom:1rem}
+.promo-steps{list-style:none;margin-bottom:1.2rem}
+.promo-steps li{font-size:13px;line-height:1.8;color:var(--muted);padding:.3rem 0;display:flex;gap:.6rem}
+.promo-steps li b{color:var(--brown);flex-shrink:0}
+.promo-rewards{display:flex;flex-direction:column;gap:.7rem}
+.promo-reward{
+  background:var(--cream);border:1px solid var(--border);border-radius:10px;
+  padding:.9rem 1.2rem;display:flex;align-items:center;gap:.9rem;
+}
+.promo-reward .medal{font-size:22px}
+.promo-reward .rtext{font-size:13px;color:var(--brown);line-height:1.6}
+.promo-reward .rtext b{color:var(--gold)}
+.promo-location{
+  background:var(--brown);color:#fff;border-radius:10px;padding:1.2rem 1.4rem;
+  margin-top:1rem;display:flex;align-items:flex-start;gap:.9rem;
+}
+.promo-location .picon{font-size:20px;flex-shrink:0}
+.promo-location .ptext{font-size:13px;line-height:1.8}
+.promo-location .ptext b{display:block;font-size:14px;margin-bottom:.2rem}
+.promo-location a{color:var(--gold2);font-weight:700;text-decoration:none}
+.promo-location a:hover{text-decoration:underline}
+@media(max-width:768px){
+  .promo-card{grid-template-columns:1fr}
+}
+
+/* ── BOUNCE TEXT ── */
+.bounce-text{display:inline-flex}
+.bounce-text .bchar{
+  display:inline-block;
+  animation:bounceChar .6s ease;
+  animation-iteration-count:2;
+}
+@keyframes bounceChar{
+  0%,100%{transform:translateY(0)}
+  30%{transform:translateY(-10px)}
+  50%{transform:translateY(0)}
+  65%{transform:translateY(-4px)}
+  80%{transform:translateY(0)}
+}
+@media(prefers-reduced-motion:reduce){
+  .bounce-text .bchar{animation:none}
+}
 </style>
 </head>
 <body>
+
+<div class="promo-bar" id="promoBar">
+  <span>☀️ 暑假秤重挑戰賽 7/1-7/31｜自己動手拉豆，猜中重量咖啡豆免費拿！</span>
+  <a href="#promo">查看詳情 →</a>
+  <button class="promo-bar-close" id="promoBarClose" aria-label="關閉公告">✕</button>
+</div>
 
 <nav class="nav">
   <a href="/" class="nav-logo"><img src="images/logo.png" alt="COFeel 凱飛鮮烘豆 Logo"></a>
@@ -575,6 +653,39 @@ body{
     <div><h3>20+產地・持續探索</h3><p>衣索比亞、馬拉威、緬甸、宏都拉斯等稀有豆款，朝俊親選。</p></div>
   </div>
 </div>
+
+<section id="promo" class="promo-wrap">
+  <div class="section">
+    <p class="sec-eyebrow">期間限定活動</p>
+    <h2 class="sec-title"><span aria-hidden="true">☀️</span> <span class="bounce-text" id="bounceTitle" aria-label="暑假秤重挑戰賽"></span></h2>
+    <div class="promo-card">
+      <div>
+        <span class="promo-badge">🎯 拉豆好手挑戰賽</span>
+        <h3>自己動手拉豆，猜得準，咖啡免費拿！</h3>
+        <p class="promo-date">📅 活動期間：2026/07/01（三）～ 2026/07/31（五）</p>
+        <ul class="promo-steps">
+          <li><b>① 凡單次購買咖啡豆滿 100 克以上</b></li>
+          <li><b>②</b>自己動手拉豆，現場說出你預估的重量</li>
+          <li><b>③</b>現場秤重揭曉答案，誤差越小獎勵越大</li>
+        </ul>
+        <div class="promo-location">
+          <span class="picon">📍</span>
+          <div class="ptext">
+            <b>CoFeel 凱飛鮮烘豆・永安店</b>
+            新北市永和區中和路501巷12號（永安捷運站出口正對面巷內）<br>
+            ☎️ 02-22489938<br>
+            <a href="https://maps.app.goo.gl/?q=新北市永和區中和路501巷12號" target="_blank">在 Google 地圖開啟導航 →</a>
+          </div>
+        </div>
+      </div>
+      <div class="promo-rewards">
+        <div class="promo-reward"><span class="medal">🥇</span><span class="rtext">誤差 <b>±2克內</b>　本次拉取咖啡豆免費帶回家！</span></div>
+        <div class="promo-reward"><span class="medal">🥈</span><span class="rtext">誤差 <b>±5克內</b>　精品濾掛咖啡 1 包</span></div>
+        <div class="promo-reward"><span class="medal">🥉</span><span class="rtext">誤差 <b>±10克內</b>　$50 購豆優惠券</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="shop" class="section">
   <div class="shop-header">
@@ -1233,6 +1344,61 @@ render();
     c.addEventListener('click', function(){ sendMessage(c.textContent); });
   });
 
+})();
+</script>
+
+<script>
+(function(){
+  var bar = document.getElementById('promoBar');
+  var closeBtn = document.getElementById('promoBarClose');
+  if(!bar) return;
+
+  var promoStart = new Date('2026-07-01T00:00:00+08:00');
+  var promoEnd = new Date('2026-07-31T23:59:59+08:00');
+  var now = new Date();
+  var dismissed = localStorage.getItem('promoBarDismissed_202607');
+
+  if(now < promoStart || now > promoEnd || dismissed){
+    bar.style.display = 'none';
+  }
+
+  closeBtn.addEventListener('click', function(){
+    bar.style.display = 'none';
+    localStorage.setItem('promoBarDismissed_202607', '1');
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var title = document.getElementById('bounceTitle');
+  if(!title) return;
+  var text = title.getAttribute('aria-label') || title.textContent;
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  title.innerHTML = text.split('').map(function(ch, i){
+    var delay = reduceMotion ? 0 : (i * 0.08);
+    return '<span class="bchar" style="animation-delay:' + delay + 's">' + ch + '</span>';
+  }).join('');
+
+  if(!('IntersectionObserver' in window) || reduceMotion) return;
+
+  var hasPlayed = false;
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting && !hasPlayed){
+        hasPlayed = true;
+        var chars = title.querySelectorAll('.bchar');
+        chars.forEach(function(c){
+          c.style.animation = 'none';
+          void c.offsetWidth;
+          c.style.animation = '';
+        });
+        observer.disconnect();
+      }
+    });
+  }, {threshold:0.5});
+  observer.observe(title);
 })();
 </script>
 </body>
