@@ -15,6 +15,23 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- 商品頁（Merchant Center 試點批次） -->
+  <url><loc>https://www.cofeel.com.tw/products/18276.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/18278.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/18380.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/18834.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/18835.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/18957.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/19005.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/19081.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/19348.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/19349.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/19408.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/19409.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/19410.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/19432.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.cofeel.com.tw/products/19500.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+
   <!-- 知識文章 -->
   <url>
     <loc>https://www.cofeel.com.tw/blog/coffee-liver-health-myths.html</loc>
