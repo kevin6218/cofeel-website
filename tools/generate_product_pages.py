@@ -187,8 +187,11 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
 
     feed_rows = []
+    generated_ids = []
 
-    for pid in PILOT_IDS:
+    all_ids = [p["id"] for p in products if p.get("status") == "active"]
+
+    for pid in all_ids:
         p = by_id.get(pid)
         if not p:
             print(f"WARN: product {pid} not found, skipping")
@@ -236,6 +239,8 @@ def main():
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(page)
 
+        generated_ids.append(pid)
+
         feed_rows.append({
             "id": pid,
             "title": title,
@@ -256,8 +261,27 @@ def main():
         writer.writeheader()
         writer.writerows(feed_rows)
 
+    # Remove stale pages for products no longer active/present
+    generated_set = set(generated_ids)
+    removed = []
+    for fname in os.listdir(out_dir):
+        if not fname.endswith(".html"):
+            continue
+        pid = fname[:-5]
+        if pid not in generated_set:
+            os.remove(os.path.join(out_dir, fname))
+            removed.append(pid)
+
+    sitemap_path = os.path.join(ROOT, "tools", "products_sitemap_urls.txt")
+    with open(sitemap_path, "w", encoding="utf-8") as f:
+        for pid in generated_ids:
+            f.write(f'  <url><loc>{SITE}/products/{pid}.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>\n')
+
     print(f"Generated {len(feed_rows)} product pages in /products/")
+    if removed:
+        print(f"Removed {len(removed)} stale pages: {', '.join(removed)}")
     print(f"Generated feed: tools/merchant_feed_pilot.csv")
+    print(f"Generated sitemap URL block: tools/products_sitemap_urls.txt")
 
 
 if __name__ == "__main__":
