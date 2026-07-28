@@ -156,6 +156,27 @@
 
   <!-- 知識文章 -->
   <url>
+    <loc>https://www.cofeel.com.tw/blog/coffee-bean-resting-guide.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.cofeel.com.tw/blog/coffee-bean-storage-guide.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.cofeel.com.tw/blog/coffee-bean-expiry-guide.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.cofeel.com.tw/blog/coffee-liver-health-myths.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
