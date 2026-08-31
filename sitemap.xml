@@ -156,6 +156,27 @@
 
   <!-- 知識文章 -->
   <url>
+    <loc>https://www.cofeel.com.tw/blog/coffee-first-crack-guide</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.cofeel.com.tw/blog/coffee-bean-oil-guide</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.cofeel.com.tw/blog/peaberry-coffee-guide</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.cofeel.com.tw/blog/coffee-bean-resting-guide</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
