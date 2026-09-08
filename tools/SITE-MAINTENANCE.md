@@ -20,7 +20,7 @@ The built-in five-requests-per-minute limiter is per warm function instance and 
 
 ## Analytics
 
-`assets/site.js` emits `purchase_outbound`, `contact_line`, `store_directions` and `view_product_link` into the in-page `dataLayer`. It does not persist or transmit those events by itself. No GA4 property, tracking ID or external collection is configured. After the owner obtains the GA4 measurement ID, add the tag and connect these events; do not count outbound clicks as completed purchases.
+GA4 measurement ID `G-R9EDGK5GED` is loaded by `assets/site.js`. It sends page views plus `purchase_outbound`, `contact_line`, `contact_phone`, `store_directions` and `view_product_link` events. An outbound purchase click is an intent signal, not a completed order.
 
 ## Images and editorial follow-up
 

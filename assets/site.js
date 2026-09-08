@@ -1,15 +1,25 @@
 (function () {
-  // No network analytics is enabled until a real GA4 ID is configured.
+  const measurementId='G-R9EDGK5GED';
   window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+  window.gtag('js',new Date());
+  window.gtag('config',measurementId);
+  if(!document.querySelector('script[data-cofeel-ga4]')){
+    const script=document.createElement('script');
+    script.async=true;script.dataset.cofeelGa4='';
+    script.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(measurementId);
+    document.head.appendChild(script);
+  }
   document.addEventListener('click', event => {
     const a=event.target.closest('a[href]');if(!a)return;
     const url=new URL(a.href,location.href);
     let name;
     if(url.hostname==='www.thelife.com.tw') name='purchase_outbound';
     else if(url.hostname==='line.me') name='contact_line';
+    else if(url.protocol==='tel:') name='contact_phone';
     else if(/(^|\.)google\.com$/.test(url.hostname)&&/maps/.test(url.href)) name='store_directions';
     else if(url.origin===location.origin&&url.pathname.startsWith('/products/')) name='view_product_link';
-    if(name) window.dataLayer.push({event:name,link_path:url.pathname,product_id:url.searchParams.get('Id') || url.pathname.split('/').pop(),page_path:location.pathname});
+    if(name) window.gtag('event',name,{link_path:url.pathname,product_id:url.searchParams.get('Id') || url.pathname.split('/').pop(),page_path:location.pathname,transport_type:'beacon'});
   });
   const menu=document.getElementById('navHamburger');
   const links=document.querySelector('.nav-links');
