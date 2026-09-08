@@ -1,4 +1,7 @@
 :root{--bg:#fcfbf8;--bg2:#f3f2ed;--bg3:#eae8df;--cream:#fff;--brown:#252b28;--brown2:#405248;--text:#252b28;--muted:#626760;--gold:#89621d;--gold2:#b2873c;--border:rgba(37,43,40,.16)}
+a[href^="tel:"]{color:inherit;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.store-wrap a[href^="tel:"]{color:#fff}
+a[href^="tel:"]:hover,a[href^="tel:"]:focus-visible{text-decoration-thickness:2px}
 html{scroll-padding-top:85px}body{line-height:1.7}*,*::before,*::after{box-sizing:border-box;letter-spacing:0!important}a,button,input,select,textarea{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #337864;outline-offset:4px}button,input,select,textarea{font:inherit}[hidden]{display:none!important}img{max-width:100%}button,a{touch-action:manipulation}
 .nav{background:#fcfbf8;backdrop-filter:none}.nav-logo img{height:42px;width:auto}.nav-links{gap:1.3rem;align-items:center}.nav-links a{font-size:14px}.nav-cta,.btn-primary,.btn-outline{border-radius:6px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}.nav-hamburger{width:44px;height:44px}.nav-back,.nav-home{font-size:14px!important}
 .skip-link{position:fixed;top:-80px;left:12px;z-index:10001;background:#fff;padding:12px}.skip-link:focus{top:12px}
