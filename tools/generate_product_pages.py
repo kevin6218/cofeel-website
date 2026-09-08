@@ -2,6 +2,7 @@ import json
 import csv
 import os
 import html
+import subprocess
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://www.cofeel.com.tw"
@@ -197,7 +198,7 @@ def main():
             print(f"WARN: product {pid} not found, skipping")
             continue
 
-        canonical = f"{SITE}/products/{pid}.html"
+        canonical = f"{SITE}/products/{pid}"
         description = build_description(p)
         title = p["name"]
         flavor_tags = "".join(f'<span class="ftag">{esc(f)}</span>' for f in p.get("flavors", []))
@@ -275,13 +276,14 @@ def main():
     sitemap_path = os.path.join(ROOT, "tools", "products_sitemap_urls.txt")
     with open(sitemap_path, "w", encoding="utf-8") as f:
         for pid in generated_ids:
-            f.write(f'  <url><loc>{SITE}/products/{pid}.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>\n')
+            f.write(f'  <url><loc>{SITE}/products/{pid}</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>\n')
 
     print(f"Generated {len(feed_rows)} product pages in /products/")
     if removed:
         print(f"Removed {len(removed)} stale pages: {', '.join(removed)}")
     print(f"Generated feed: tools/merchant_feed_pilot.csv")
     print(f"Generated sitemap URL block: tools/products_sitemap_urls.txt")
+    subprocess.run(["node", os.path.join(ROOT, "tools", "build-site.mjs")], check=True)
 
 
 if __name__ == "__main__":

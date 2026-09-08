@@ -1,6 +1,12 @@
 {
-  "cleanUrls": false,
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "cleanUrls": true,
+  "functions": {"api/chat.js": {"maxDuration": 30, "includeFiles": "{tools/products.json,data/stores.json}"}},
+  "headers": [
+    {"source": "/(.*)", "headers": [
+      {"key": "X-Content-Type-Options", "value": "nosniff"},
+      {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"}
+    ]}
   ]
 }

@@ -20,7 +20,7 @@ def update_sitemap(filename):
     root = tree.getroot()
     ns = "http://www.sitemaps.org/schemas/sitemap/0.9"
 
-    new_url = f"{SITE_URL}/blog/{filename}"
+    new_url = f"{SITE_URL}/blog/{filename.removesuffix('.html')}"
 
     # 檢查是否已存在
     for url in root.findall(f"{{{ns}}}url"):
@@ -56,7 +56,7 @@ def git_push(filename, title):
 
 def print_gsc_reminder(filename):
     """提示去 Search Console 要求索引"""
-    url = f"{SITE_URL}/blog/{filename}"
+    url = f"{SITE_URL}/blog/{filename.removesuffix('.html')}"
     print()
     print("=" * 55)
     print("📋 最後一步：去 Google Search Console 要求建立索引")
