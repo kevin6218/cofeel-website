@@ -1,8 +1,10 @@
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { join } from 'node:path';
 
-const products = JSON.parse(readFileSync(new URL('../tools/products.json', import.meta.url), 'utf8')).filter(p => p.status === 'active');
-const stores = JSON.parse(readFileSync(new URL('../data/stores.json', import.meta.url), 'utf8'));
+// Vercel bundles handlers separately; included files resolve from the project root.
+const products = JSON.parse(readFileSync(join(process.cwd(), 'tools/products.json'), 'utf8')).filter(p => p.status === 'active');
+const stores = JSON.parse(readFileSync(join(process.cwd(), 'data/stores.json'), 'utf8'));
 const localBuckets = new Map();
 const origins = new Set(['https://www.cofeel.com.tw','https://cofeel.com.tw','https://cofeel-website.vercel.app','https://cofeel-website-xl6u.vercel.app']);
 
