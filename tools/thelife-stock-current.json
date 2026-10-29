@@ -1,0 +1,3058 @@
+{
+  "audited_at": "2026-10-29T10:17:14.224Z",
+  "source": "https://www.thelife.com.tw/product/list.aspx?cId=202",
+  "count": 203,
+  "summary": {
+    "in_stock": 158,
+    "out_of_stock": 45,
+    "price_verified": 202,
+    "price_mismatch": 1
+  },
+  "products": [
+    {
+      "id": "19514",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞 荔枝雙重厭氧蜜處理 G1 一磅(227gx2袋)",
+      "price": 1138,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19514&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1580,
+        1138
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19513",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞 荔枝雙重厭氧蜜處理 G1 半磅",
+      "price": 590,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19513&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        790,
+        590
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19510",
+      "name": "CoFeel 凱飛鮮烘豆尼加拉瓜花語阿拉比卡咖啡豆半磅(227g/袋)",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19510&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        599,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19506",
+      "name": "CoFeel 凱飛鮮烘豆醬香耶加特調阿拉比卡咖啡豆一磅(227gx2袋)",
+      "price": 899,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19506&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1198,
+        899
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19504",
+      "name": "CoFeel 凱飛鮮烘豆醬香耶加特調阿拉比卡咖啡豆半磅(227g/袋)",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19504&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        599,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19432",
+      "name": "CoFeel 凱飛鮮烘豆宏都拉斯帕萊伊內瑪 Parainema 蜜處理咖啡豆一磅(227gx2袋)",
+      "price": 899,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19432&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1198,
+        899
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19431",
+      "name": "CoFeel 凱飛鮮烘豆宏都拉斯帕萊伊內瑪 Parainema 蜜處理咖啡豆半磅(227g/袋)",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19431&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        599,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19410",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞 BABY GEISHA 藝伎咖啡豆一磅(227gx2袋)",
+      "price": 1149,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19410&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1800,
+        1149
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19409",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞 BABY GEISHA 藝伎咖啡豆半磅(227g/袋)",
+      "price": 599,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19409&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        900,
+        599
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19408",
+      "name": "CoFeel 凱飛鮮烘豆印度賴比瑞亞咖啡豆一磅(227gx2袋)",
+      "price": 1299,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19408&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2198,
+        1299
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19407",
+      "name": "CoFeel 凱飛鮮烘豆印度賴比瑞亞咖啡豆半磅(227g/袋)",
+      "price": 699,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19407&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1099,
+        699
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19350",
+      "name": "CoFeel 凱飛鮮烘豆緬甸依濃巧克力堅果高山阿拉比卡咖啡豆一磅-中深烘焙(227gx2袋)",
+      "price": 698,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19350&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        980,
+        698
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19349",
+      "name": "CoFeel 凱飛鮮烘豆緬甸依濃巧克力堅果高山阿拉比卡咖啡豆半磅-中深烘焙(227g/袋)",
+      "price": 390,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19349&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        490,
+        390
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19348",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞古吉G1水仙蜜處理咖啡豆一磅-淺中烘焙(227gx2袋)",
+      "price": 1299,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19348&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2198,
+        1299
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19347",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞古吉G1水仙蜜處理咖啡豆半磅-淺中烘焙(227g/袋)",
+      "price": 699,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19347&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1099,
+        699
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19198",
+      "name": "CoFeel 凱飛馬拉威酒香厭氧發酵日曬藝妓/瑰夏濾掛咖啡/耳掛咖啡包10gx60包",
+      "price": 3748,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19198&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        3999,
+        3748
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19129",
+      "name": "從生豆到風味｜凱飛烘豆體驗課 & 咖啡入門課（雙人）【再送市價 $5,280 烘豆機x2】",
+      "price": 5280,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19129&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        10560,
+        7960
+      ],
+      "price_verified": false
+    },
+    {
+      "id": "19128",
+      "name": "從生豆到風味｜凱飛烘豆體驗課 & 咖啡入門課（單人）【再送市價 $5,280 烘豆機x1】",
+      "price": 5280,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19128&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        5280,
+        4580
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19082",
+      "name": "Hiles 真空虹吸式冷熱萃取機+凱飛現烘宏都拉斯阿拉比卡咖啡豆1公斤",
+      "price": 3990,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19082&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        6080,
+        3990
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19081",
+      "name": "CoFeel 凱飛 現烘豆宏都拉斯希望曙光咖啡豆1公斤-中深烘焙",
+      "price": 999,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19081&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2250,
+        999
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19074",
+      "name": "CoFeel 凱飛不鏽鋼濾掛咖啡架+凱飛濾掛5包",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19074&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        990,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19053",
+      "name": "CoFeel 凱飛嚴選 永騰醇香阿拉比卡咖啡豆氣閥式豆罐裝",
+      "price": 799,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19053&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        990,
+        799
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19049",
+      "name": "CoFeel 凱飛 現烘豆宏都拉斯希望曙光咖啡豆一磅-中深烘焙(227gx2袋)",
+      "price": 698,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19049&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        980,
+        698
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19048",
+      "name": "CoFeel 凱飛 現烘豆宏都拉斯希望曙光咖啡豆半磅-中深烘焙(227g/袋)",
+      "price": 390,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19048&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        490,
+        390
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19027",
+      "name": "Hiles 真空虹吸式冷熱萃取機+凱飛現烘阿拉比卡咖啡豆一磅",
+      "price": 3380,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19027&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        4880,
+        3380
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19018",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞果香藝伎咖啡豆一磅-淺中烘焙(227gx2袋)",
+      "price": 1499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19018&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2400,
+        1499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19013",
+      "name": "CoFeel 凱飛鮮烘衣索比亞楓糖蜜香G1咖啡豆-淺中烘焙(227gx2袋)",
+      "price": 959,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19013&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1100,
+        959
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19012",
+      "name": "CoFeel 凱飛鮮烘衣索比亞楓糖蜜香G1咖啡豆-淺中烘焙(227g/袋)",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19012&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        550,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19011",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞果香藝伎咖啡豆半磅-淺中烘焙(227g/袋)",
+      "price": 799,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19011&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1200,
+        799
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19005",
+      "name": "CoFeeL凱飛 鮮烘品味世界濾掛咖啡/耳掛咖啡包10g(5種風味x20包)",
+      "price": 599,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19005&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        699,
+        599
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19004",
+      "name": "CoFeeL凱飛 鮮烘品味世界濾掛咖啡/耳掛咖啡包10g(5種風味x10包)",
+      "price": 349,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19004&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        399,
+        349
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19003",
+      "name": "CoFeeL凱飛 現烘啡享世界濾掛咖啡/耳掛咖啡包10g(5種風味x20包)",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19003&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        699,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "19002",
+      "name": "CoFeeL凱飛 現烘啡享世界濾掛咖啡/耳掛咖啡包10g(5種風味x10包)",
+      "price": 299,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=19002&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        350,
+        299
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18964",
+      "name": "CoFeeL凱飛現烘啡享濾掛系列-瓜地馬拉焦糖堅果耳掛50包",
+      "price": 949,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18964&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1450,
+        949
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18963",
+      "name": "CoFeeL凱飛現烘啡享濾掛系列-熱情巴西耳掛50包",
+      "price": 949,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18963&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1450,
+        949
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18961",
+      "name": "CoFeeL凱飛現烘啡享濾掛系列-肯亞蜜錢耳掛50包",
+      "price": 949,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18961&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1450,
+        949
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18960",
+      "name": "CoFeeL凱飛現烘啡享濾掛系列-奶油堅果耳掛50包",
+      "price": 949,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18960&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1450,
+        949
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18959",
+      "name": "CoFeeL凱飛現烘啡享濾掛系列-瓜地馬拉焦糖堅果耳掛20包",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18959&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        599,
+        449
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18958",
+      "name": "CoFeeL凱飛現烘啡享濾掛系列-熱情巴西耳掛20包",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18958&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        599,
+        449
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18956",
+      "name": "CoFeeL凱飛現烘啡享濾掛系列-肯亞蜜錢耳掛20包",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18956&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        599,
+        449
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18955",
+      "name": "CoFeeL凱飛現烘啡享濾掛系列-奶油堅果耳掛20包",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18955&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        599,
+        449
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18875",
+      "name": "CoFeel 凱飛鮮烘單品咖啡豆大包裝(2.3磅/1公斤)",
+      "price": 1299,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18875&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2490,
+        1299
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18872",
+      "name": "CoFeel 凱飛鮮烘咖啡豆大包裝(2.3磅/1公斤)",
+      "price": 1299,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18872&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2250,
+        1299
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18835",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選特調咖啡豆(227gx2袋)",
+      "price": 788,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18835&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1160,
+        788
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18834",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選特調咖啡豆(227g/袋)",
+      "price": 399,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18834&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        580,
+        399
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18770",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選十二星座配方咖啡豆【夢幻奇境】",
+      "price": 399,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18770&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        570,
+        399
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18769",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選十二星座配方咖啡豆【靈感火花】",
+      "price": 399,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18769&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        590,
+        399
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18768",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選十二星座配方咖啡豆【堅毅堅定】",
+      "price": 369,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18768&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        530,
+        369
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18767",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選十二星座配方咖啡豆【無限探索】",
+      "price": 369,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18767&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        530,
+        369
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18766",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選十二星座配方咖啡豆【深邃神秘】",
+      "price": 450,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18766&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        650,
+        450
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18765",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選十二星座配方咖啡豆【平衡之美】",
+      "price": 349,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18765&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        499,
+        349
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18764",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選十二星座配方咖啡豆【純淨之心】",
+      "price": 369,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18764&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        530,
+        369
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18763",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選十二星座配方咖啡豆【驕陽榮耀】",
+      "price": 349,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18763&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        499,
+        349
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18762",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選十二星座配方咖啡豆【溫暖懷抱】",
+      "price": 349,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18762&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        499,
+        349
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18761",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選十二星座配方咖啡豆【輕盈跳躍】",
+      "price": 399,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18761&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        570,
+        399
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18760",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選十二星座配方咖啡豆【舒適之地】",
+      "price": 349,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18760&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        499,
+        349
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18759",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-Ai嚴選十二星座配方咖啡豆【熱情晨曦】",
+      "price": 399,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18759&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        570,
+        399
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18574",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-衣索比亞水果炸彈厭氧日曬G1(227gx2袋)",
+      "price": 788,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18574&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1160,
+        788
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18573",
+      "name": "CoFeel 凱飛火山噴泉鮮烘咖啡豆-衣索比亞水果炸彈厭氧日曬G1(227g/袋)",
+      "price": 399,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18573&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        580,
+        399
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18380",
+      "name": "CoFeel 凱飛薇薇特南果咖啡豆-中烘焙(227gx2包)",
+      "price": 698,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18380&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        980,
+        698
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18379",
+      "name": "CoFeel 凱飛薇薇特南果咖啡豆-中烘焙(227g/包)",
+      "price": 390,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18379&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        490,
+        390
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18378",
+      "name": "CoFeel 凱飛特調酒香花神咖啡豆-中烘焙(227gx2包)",
+      "price": 799,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18378&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1100,
+        799
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18377",
+      "name": "CoFeel 凱飛特調酒香花神咖啡豆-中烘焙(227g/包)",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18377&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        550,
+        449
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18324",
+      "name": "CoFeel 凱飛鮮烘豆香醇咖啡體驗禮盒組(手搖咖啡磨豆機+ U型清潔刷+阿拉比卡咖啡豆半磅)",
+      "price": 799,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18324&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1380,
+        799
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18281",
+      "name": "CoFeel 凱飛嚴選隨身行動手搖咖啡磨豆機/手沖咖啡杯+不鏽鋼掛耳咖啡壺/手沖壺/細嘴壺350ml",
+      "price": 699,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18281&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1290,
+        699
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18280",
+      "name": "CoFeel 凱飛嚴選隨身行動手搖咖啡磨豆機/手沖咖啡杯+阿拉比卡鮮烘咖啡豆半磅",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18280&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        899,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18278",
+      "name": "CoFeel 凱飛鮮烘豆極品咖啡豆氣閥式豆罐裝半磅+百年老店泉發蜂蜜50g(啡嚐親蜜禮盒/咖啡禮盒/蜂蜜禮盒)",
+      "price": 1688,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18278&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2380,
+        1688
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18276",
+      "name": "CoFeel 凱飛鮮烘豆馬拉威厭氧酒香藝妓極品咖啡豆氣閥式豆罐裝半磅+百年老店泉發蜂蜜50g(啡嚐親蜜禮盒/咖啡禮盒/蜂蜜禮盒)",
+      "price": 1888,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18276&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2580,
+        1888
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18268",
+      "name": "CoFeel 凱飛嚴選隨身行動手搖咖啡磨豆機/手沖咖啡杯",
+      "price": 399,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18268&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        599,
+        399
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18262",
+      "name": "CoFeel 凱飛輕薄柔軟矽藻土防滑快乾吸水墊40x30cm 6入(珪藻土/瀝水墊/餐墊)",
+      "price": 999,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18262&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2340,
+        999
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18261",
+      "name": "CoFeel 凱飛輕薄柔軟矽藻土防滑快乾吸水墊40x30cm 2入(珪藻土/瀝水墊/餐墊)",
+      "price": 399,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18261&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        780,
+        399
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18260",
+      "name": "CoFeel 凱飛輕薄柔軟矽藻土防滑快乾吸水墊40x30cm(珪藻土/瀝水墊/餐墊)",
+      "price": 239,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18260&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        390,
+        239
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18191",
+      "name": "(生豆)E7HomeCafe一起烘咖啡 AI智能挑豆哥斯大黎加征服者水洗單品咖啡生豆1公斤",
+      "price": 1080,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18191&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1700,
+        1080
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18189",
+      "name": "(生豆)E7HomeCafe一起烘咖啡 AI智能挑豆緬甸雲頂日曬單品咖啡生豆1公斤",
+      "price": 899,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18189&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1340,
+        899
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18188",
+      "name": "(生豆)E7HomeCafe一起烘咖啡 AI智能挑豆緬甸雲頂日曬單品咖啡生豆500克",
+      "price": 469,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18188&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        670,
+        469
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18187",
+      "name": "(生豆)E7HomeCafe一起烘咖啡 AI智能挑豆肯亞AA水洗單品咖啡生豆1公斤",
+      "price": 1230,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18187&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1860,
+        1230
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18186",
+      "name": "(生豆)E7HomeCafe一起烘咖啡 AI智能挑豆肯亞AA水洗單品咖啡生豆500克",
+      "price": 649,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18186&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        930,
+        649
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18185",
+      "name": "(生豆)E7HomeCafe一起烘咖啡 AI智能挑豆衣索比亞耶加雪菲日曬一級單品咖啡生豆1公斤",
+      "price": 1230,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18185&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1860,
+        1230
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18176",
+      "name": "CoFeel 凱飛不鏽鋼濾掛咖啡架/露營登山掛耳咖啡架附接漏盤(送凱飛濾掛咖啡5包-風味隨機)",
+      "price": 599,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18176&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1190,
+        599
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18175",
+      "name": "CoFeel 凱飛304不鏽鋼韓式小菜盤/醬料盤14cm 4入",
+      "price": 749,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18175&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1190,
+        749
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18166",
+      "name": "CoFeel 凱飛304不鏽鋼韓式小菜盤/醬料盤14cm",
+      "price": 249,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18166&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        299,
+        249
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "18165",
+      "name": "CoFeel 凱飛不鏽鋼濾掛咖啡架/露營登山掛耳咖啡架",
+      "price": 399,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=18165&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        899,
+        399
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17821",
+      "name": "CoFeel 凱飛嚴選醇香阿拉比卡濾掛咖啡/耳掛咖啡包10gx40包量販袋",
+      "price": 1190,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17821&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1590,
+        1190
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17820",
+      "name": "CoFeel 凱飛嚴選醇香阿拉比卡濾掛咖啡/耳掛咖啡包10gx10包",
+      "price": 330,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17820&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        399,
+        330
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17816",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞酒香莓人日曬G1淺中烘焙咖啡豆氣閥式豆罐裝一磅",
+      "price": 1690,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17816&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2180,
+        1690
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17815",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞酒香莓人日曬G1淺中烘焙咖啡豆氣閥式豆罐裝半磅",
+      "price": 899,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17815&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1090,
+        899
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17776",
+      "name": "CoFeel 凱飛鮮烘豆瓜地馬拉花神濾掛咖啡/掛耳咖啡包10gx40包量販袋",
+      "price": 1190,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17776&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1590,
+        1190
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17725",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞酒香莓人日曬G1淺中烘焙咖啡豆一磅",
+      "price": 1099,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17725&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1780,
+        1099
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17724",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞酒香莓人日曬G1淺中烘焙咖啡豆半磅",
+      "price": 599,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17724&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        890,
+        599
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17661",
+      "name": "CoFeel 凱飛鮮烘豆瓜地馬拉花神濾掛咖啡/掛耳咖啡包10gx20包",
+      "price": 599,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17661&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        798,
+        599
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17660",
+      "name": "CoFeel 凱飛鮮烘豆瓜地馬拉花神濾掛咖啡/掛耳咖啡包10gx10包",
+      "price": 299,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17660&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        399,
+        299
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17650",
+      "name": "Hiles 單品阿拉比卡咖啡豆半磅(馬拉威藝妓)",
+      "price": 949,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17650&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1390,
+        949
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17644",
+      "name": "Hiles 精選阿拉比卡咖啡豆半磅(經典曼巴/義式濃縮/特調綜合)",
+      "price": 390,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17644&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        490,
+        390
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17615",
+      "name": "Hiles 單品阿拉比卡咖啡豆半磅(耶加雪菲G1/肯亞AA/花神)",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17615&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        550,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17543",
+      "name": "168黑咖啡 品味不凡酒香藝妓浸泡式冷熱萃咖啡包10克x20包",
+      "price": 980,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17543&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1600,
+        980
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17542",
+      "name": "168黑咖啡 品味不凡酒香藝妓浸泡式冷熱萃咖啡包10克x8包",
+      "price": 468,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17542&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        640,
+        468
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17527",
+      "name": "Hiles 馬拉威酒香藝妓極品咖啡豆氣閥式豆罐裝半磅+御慈即食燕窩4瓶(啡常燕麗禮盒)",
+      "price": 2388,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17527&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        3280,
+        2388
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17525",
+      "name": "Hiles 極品咖啡豆氣閥式豆罐裝半磅+御慈即食燕窩4瓶(啡常燕麗禮盒)",
+      "price": 2088,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17525&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2860,
+        2088
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17524",
+      "name": "CoFeel 凱飛鮮烘豆馬拉威酒香藝妓極品咖啡豆氣閥式豆罐裝半磅+御慈即食燕窩4瓶(啡常燕麗禮盒)",
+      "price": 2388,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17524&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        3280,
+        2388
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17522",
+      "name": "CoFeel 凱飛鮮烘豆極品咖啡豆氣閥式豆罐裝半磅+御慈即食燕窩4瓶(啡常燕麗禮盒)",
+      "price": 2088,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17522&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2860,
+        2088
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17521",
+      "name": "Hiles 馬拉威厭氧酒香藝妓極品咖啡豆氣閥式豆罐裝半磅+泉發蜂蜜250g 2罐(啡嚐親蜜禮盒/咖啡禮盒/蜂蜜禮盒)",
+      "price": 2268,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17521&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2980,
+        2268
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17519",
+      "name": "Hiles 極品咖啡豆氣閥式豆罐裝半磅+泉發蜂蜜250g 2罐(啡嚐親蜜禮盒/咖啡禮盒/蜂蜜禮盒)",
+      "price": 1888,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17519&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2580,
+        1888
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17518",
+      "name": "CoFeel 凱飛鮮烘豆馬拉威厭氧酒香藝妓極品咖啡豆氣閥式豆罐裝半磅+泉發蜂蜜250g 2罐(啡嚐親蜜禮盒/咖啡禮盒/蜂蜜禮盒)",
+      "price": 2268,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17518&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2980,
+        2268
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17516",
+      "name": "CoFeel 凱飛鮮烘豆極品咖啡豆氣閥式豆罐裝半磅+泉發蜂蜜250g 2罐(啡嚐親蜜禮盒/咖啡禮盒/蜂蜜禮盒)",
+      "price": 1888,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17516&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2580,
+        1888
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17418",
+      "name": "Hiles 耶加雪菲單品濾掛咖啡/掛耳咖啡包10g x 20包",
+      "price": 678,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17418&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        998,
+        678
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17417",
+      "name": "Hiles 耶加雪菲單品濾掛咖啡/掛耳咖啡包10g x 10包",
+      "price": 379,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17417&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        499,
+        379
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17412",
+      "name": "Hiles 特調黃金曼巴濾掛咖啡/掛耳咖啡包10g x 20包",
+      "price": 678,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17412&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        938,
+        678
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17411",
+      "name": "Hiles 特調黃金曼巴濾掛咖啡/掛耳咖啡包10g x 10包",
+      "price": 379,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17411&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        469,
+        379
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17368",
+      "name": "CoFeel 凱飛鮮烘豆緬甸雲頂2800米淺中烘焙精品阿拉比卡咖啡豆一磅",
+      "price": 799,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17368&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1100,
+        799
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17367",
+      "name": "CoFeel 凱飛鮮烘豆緬甸雲頂2800米淺中烘焙精品阿拉比卡咖啡豆半磅",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17367&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        550,
+        449
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17253",
+      "name": "(生豆)E7HomeCafe一起烘咖啡 瓜地馬拉安地瓜花神水洗處理咖啡生豆1000克",
+      "price": 990,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17253&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1400,
+        990
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17211",
+      "name": "CoFeel 凱飛馬拉威厭氧酒香藝妓淺中焙極品咖啡豆氣閥式豆罐裝一磅+濾掛禮盒",
+      "price": 2280,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17211&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        3280,
+        2280
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17210",
+      "name": "CoFeel 凱飛衣索比亞耶加雪菲G1淺中焙極品咖啡豆氣閥式豆罐裝一磅+濾掛禮盒",
+      "price": 1880,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17210&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2380,
+        1880
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17209",
+      "name": "CoFeel 凱飛鮮烘豆肯亞AA淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝一磅",
+      "price": 1490,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17209&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1980,
+        1490
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17208",
+      "name": "CoFeel 凱飛鮮烘豆肯亞AA淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝半磅",
+      "price": 790,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17208&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        990,
+        790
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17090",
+      "name": "CoFeel 凱飛鮮烘豆馬拉威厭氧酒香藝妓淺中焙阿拉比卡咖啡豆一磅",
+      "price": 1799,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17090&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2780,
+        1799
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17089",
+      "name": "CoFeel 凱飛鮮烘豆馬拉威厭氧酒香藝妓淺中焙阿拉比卡咖啡豆半磅",
+      "price": 949,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17089&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1390,
+        949
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17088",
+      "name": "CoFeel 凱飛鮮烘豆肯亞AA淺中焙極品阿拉比卡咖啡豆一磅",
+      "price": 899,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17088&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1100,
+        899
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17087",
+      "name": "CoFeel 凱飛鮮烘豆肯亞AA淺中焙極品阿拉比卡咖啡豆半磅",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17087&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        550,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17062",
+      "name": "Hiles 衣索比亞谷吉淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝一磅",
+      "price": 1490,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17062&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1980,
+        1490
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17061",
+      "name": "Hiles 衣索比亞谷吉淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝半磅",
+      "price": 790,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17061&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        990,
+        790
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17060",
+      "name": "Hiles 衣索比亞耶加雪菲G1淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝一磅",
+      "price": 1490,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17060&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1980,
+        1490
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17059",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞耶加雪菲G1淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝一磅",
+      "price": 1490,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17059&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1980,
+        1490
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17058",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞耶加雪菲G1淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝半磅",
+      "price": 790,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17058&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        990,
+        790
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17057",
+      "name": "Hiles 馬拉威厭氧酒香藝妓淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝一磅",
+      "price": 1880,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17057&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2980,
+        1880
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17056",
+      "name": "Hiles 馬拉威厭氧酒香藝妓淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝半磅",
+      "price": 990,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17056&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1490,
+        990
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17049",
+      "name": "Hiles 肯亞AA淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝一磅",
+      "price": 1490,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17049&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1980,
+        1490
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17048",
+      "name": "Hiles 肯亞AA淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝半磅",
+      "price": 790,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17048&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        990,
+        790
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17045",
+      "name": "CoFeel 凱飛鮮烘豆馬拉威厭氧酒香藝妓淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝一磅",
+      "price": 1880,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17045&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2980,
+        1880
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17044",
+      "name": "CoFeel 凱飛鮮烘豆馬拉威厭氧酒香藝妓淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝半磅",
+      "price": 990,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17044&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1490,
+        990
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17042",
+      "name": "Hiles 衣索比亞耶加雪菲G1淺中焙極品阿拉比卡咖啡豆氣閥式豆罐裝半磅",
+      "price": 790,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17042&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        990,
+        790
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17040",
+      "name": "CoFeel 凱飛鮮烘豆禮盒耶加雪菲/黃金曼特寧單品濾掛咖啡/耳掛咖啡包10g x 20包",
+      "price": 899,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17040&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1299,
+        899
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17033",
+      "name": "CoFeel 凱飛不鏽鋼咖啡手沖壺細嘴壺600ml+智能咖啡秤3公斤(電子秤/計時秤/料理秤)",
+      "price": 1549,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17033&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2679,
+        1549
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "17032",
+      "name": "CoFeel凱飛 充電式電動咖啡磨豆機(研磨機/磨粉機)送凱飛鮮烘豆阿拉比卡單品咖啡豆半磅",
+      "price": 1290,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=17032&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1980,
+        1290
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16982",
+      "name": "聖經神愛世人哥倫比亞濾掛咖啡/耳掛咖啡包10g*40包",
+      "price": 749,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16982&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1196,
+        749
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16981",
+      "name": "聖經神愛世人哥倫比亞濾掛咖啡/耳掛咖啡包10g*10包",
+      "price": 249,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16981&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        299,
+        249
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16847",
+      "name": "CoFeel 凱飛鮮烘豆谷王巴非特調阿拉比卡中烘焙咖啡豆一磅",
+      "price": 799,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16847&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1100,
+        799
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16846",
+      "name": "CoFeel 凱飛鮮烘豆谷王巴非特調阿拉比卡中烘焙咖啡豆半磅",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16846&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        550,
+        449
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16683",
+      "name": "CoFeel 凱飛鮮烘豆耶加雪夫單品濾掛咖啡/耳掛咖啡包10g x 40包量販袋",
+      "price": 1190,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16683&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1716,
+        1190
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16682",
+      "name": "CoFeel 凱飛鮮烘豆黃金曼特寧單品濾掛咖啡/耳掛咖啡包10g x 40包量販袋",
+      "price": 1190,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16682&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1716,
+        1190
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16670",
+      "name": "CoFeel 凱飛鮮烘豆巴西雨林風情單品阿拉比卡濾掛咖啡/耳掛咖啡包10gx20包",
+      "price": 580,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16670&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        799,
+        580
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16669",
+      "name": "CoFeel 凱飛鮮烘豆濃香特調義式咖啡豆一磅",
+      "price": 690,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16669&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        990,
+        690
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16636",
+      "name": "CoFeel 凱飛鮮烘豆半磅咖啡豆特惠組+台灣製玻璃咖啡悶蒸沖泡壺400cc",
+      "price": 550,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16636&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        989,
+        550
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16615",
+      "name": "168黑咖啡 冷熱萃浸泡咖啡包環保包裝20包入",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16615&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        600,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16614",
+      "name": "168黑咖啡 冷熱萃浸泡咖啡包環保包裝40包入",
+      "price": 849,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16614&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1200,
+        849
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16605",
+      "name": "CoFeel凱飛 嚴選日本製針葉樹手沖濾紙錐形濾紙500張(2-4人)",
+      "price": 649,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16605&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        749,
+        649
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16603",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞耶加雪菲孔加G1淺烘焙咖啡豆一磅",
+      "price": 799,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16603&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1100,
+        799
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16597",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞耶加雪菲孔加G1淺烘焙咖啡豆半磅",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16597&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        550,
+        449
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16596",
+      "name": "Hiles 電動咖啡豆研磨機/磨豆機",
+      "price": 899,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16596&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1899,
+        899
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16591",
+      "name": "CoFeel 凱飛馬拉威酒香厭氧發酵日曬藝妓/瑰夏濾掛咖啡/耳掛咖啡包10gx8包",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16591&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        798,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16546",
+      "name": "CoFeeL凱飛智能熱風咖啡烘豆機/商用烘豆機/自動咖啡烘豆機",
+      "price": 688000,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16546&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        788000,
+        688000
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16499",
+      "name": "CoFeel 凱飛玻璃濾杯咖啡壺400ml+咖啡電子計時秤3公斤",
+      "price": 1090,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16499&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1689,
+        1090
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16496",
+      "name": "CoFeel 凱飛鮮烘豆特調黃金曼巴中深烘焙咖啡豆一磅",
+      "price": 698,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16496&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        980,
+        698
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16495",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞古吉烏拉嘎水洗一級淺中烘焙咖啡豆一磅",
+      "price": 799,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16495&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1100,
+        799
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16494",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞古吉烏拉嘎水洗一級淺中烘焙咖啡豆半磅",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16494&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        550,
+        449
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16493",
+      "name": "CoFeel 凱飛玻璃濾杯咖啡壺400ml+不鏽鋼咖啡手沖壺細嘴壺600ml+咖啡電子計時秤3公斤",
+      "price": 1790,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16493&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2679,
+        1790
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16459",
+      "name": "CoFeel 凱飛鮮烘豆特調黃金曼巴中深烘焙咖啡豆半磅",
+      "price": 390,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16459&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        660,
+        390
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16448",
+      "name": "CoFeel 凱飛鮮烘豆耶加雪菲+特調曼巴濾掛咖啡/耳掛咖啡包10g各10包",
+      "price": 589,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16448&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        798,
+        589
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16382",
+      "name": "MoliFun魔力坊 316輕量真空保溫瓶(魔幻紫)送凱飛咖啡豆半磅",
+      "price": 1090,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16382&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1690,
+        1090
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16379",
+      "name": "MoliFun魔力坊 316輕量真空保溫瓶(晴空藍)送凱飛咖啡豆半磅",
+      "price": 1090,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16379&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1690,
+        1090
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16376",
+      "name": "MoliFun魔力坊 316輕量真空保溫瓶(珍珠白)送凱飛咖啡豆半磅",
+      "price": 1090,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16376&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1690,
+        1090
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16359",
+      "name": "CoFeel 凱飛鮮烘豆特調阿拉比卡濾掛咖啡/耳掛咖啡包10gx20包",
+      "price": 589,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16359&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        699,
+        589
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16308",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞谷吉淺中烘焙咖啡豆一磅",
+      "price": 799,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16308&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1100,
+        799
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16307",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞谷吉淺中烘焙咖啡豆半磅",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16307&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        550,
+        449
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16158",
+      "name": "CoFeel 凱飛304不鏽鋼耳掛式咖啡手沖壺細嘴壺600ml+咖啡秤電子秤計時秤3公斤料理秤",
+      "price": 1478,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16158&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1980,
+        1478
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16157",
+      "name": "CoFeel凱飛嚴選 咖啡秤電子秤計時秤3公斤料理秤",
+      "price": 829,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16157&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        990,
+        829
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16044",
+      "name": "CoFeel 凱飛304不鏽鋼耳掛式咖啡手沖壺細嘴壺600ml~手沖咖啡壺長嘴壺",
+      "price": 649,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16044&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        990,
+        649
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16021",
+      "name": "CoFeel 凱飛鮮烘豆手提一磅凱飛極鮮豆耶加雪夫中烘焙+黃金曼特寧中深烘焙咖啡豆禮盒",
+      "price": 1149,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16021&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2049,
+        1149
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16020",
+      "name": "CoFeel 凱飛鮮烘豆手提一磅凱飛極鮮豆衣索比亞耶加雪夫中烘焙咖啡豆禮盒",
+      "price": 1099,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16020&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1999,
+        1099
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16019",
+      "name": "CoFeel 凱飛鮮烘豆手提一磅凱飛極鮮豆印尼黃金曼特寧中深烘焙咖啡豆禮盒",
+      "price": 1199,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16019&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        2099,
+        1199
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16018",
+      "name": "CoFeel 凱飛鮮烘豆哥倫比亞印地安雪峰中深烘焙咖啡豆一磅",
+      "price": 699,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16018&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1100,
+        699
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16017",
+      "name": "CoFeel 凱飛鮮烘豆哥倫比亞印地安雪峰中深烘焙咖啡豆半磅",
+      "price": 399,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16017&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        550,
+        399
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "16000",
+      "name": "CoFeel 凱飛鮮烘豆瓜地馬拉安地瓜花神中烘焙咖啡豆一磅",
+      "price": 799,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=16000&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1100,
+        799
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15999",
+      "name": "CoFeel 凱飛鮮烘豆瓜地馬拉安地瓜花神中烘焙咖啡豆半磅",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15999&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        550,
+        449
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15998",
+      "name": "CoFeel 凱飛鮮烘豆瓜地馬拉新東方酒香魅影淺烘焙咖啡豆一磅",
+      "price": 799,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15998&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1100,
+        799
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15997",
+      "name": "CoFeel 凱飛鮮烘豆瓜地馬拉新東方酒香魅影淺烘焙咖啡豆半磅",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15997&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        550,
+        449
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15986",
+      "name": "CoFeel 凱飛鮮烘豆特調黃金曼巴濾掛咖啡/耳掛咖啡包10gx20包",
+      "price": 589,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15986&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        698,
+        589
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15985",
+      "name": "CoFeel 凱飛鮮烘豆特調黃金曼巴濾掛咖啡/耳掛咖啡包10gx10包",
+      "price": 289,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15985&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        349,
+        289
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15983",
+      "name": "CoFeel 凱飛鮮烘豆黃金曼特寧單品濾掛咖啡/耳掛咖啡包10gx20包",
+      "price": 599,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15983&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        858,
+        599
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15982",
+      "name": "CoFeel 凱飛鮮烘豆黃金曼特寧單品濾掛咖啡/耳掛咖啡包10gx10包",
+      "price": 309,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15982&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        429,
+        309
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15980",
+      "name": "CoFeel 凱飛鮮烘豆耶加雪夫單品濾掛咖啡/耳掛咖啡包10gx20包",
+      "price": 599,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15980&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        798,
+        599
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15979",
+      "name": "CoFeel 凱飛鮮烘豆耶加雪夫單品濾掛咖啡/耳掛咖啡包10gx10包",
+      "price": 309,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15979&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        399,
+        309
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15755",
+      "name": "CoFeel 凱飛鮮烘豆黃金曼特寧中深烘焙咖啡豆半磅+濾掛咖啡袋20入食品級濾紙",
+      "price": 599,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15755&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        995,
+        599
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15754",
+      "name": "CoFeel 凱飛鮮烘豆耶加雪夫中烘焙咖啡豆半磅+濾掛咖啡袋20入食品級濾紙",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15754&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        820,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15747",
+      "name": "CoFeel 凱飛濾掛咖啡袋50入/食品級濾紙(非濾掛咖啡)",
+      "price": 279,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15747&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        399,
+        279
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15615",
+      "name": "CoFeel 凱飛咖啡豆研磨香包60g/除臭包/除濕包(6包組)",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15615&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1770,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15614",
+      "name": "CoFeel 凱飛咖啡豆研磨香包60g/除臭包/除濕包(2包組)",
+      "price": 199,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15614&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        590,
+        199
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15612",
+      "name": "CoFeel 凱飛咖啡豆研磨香包20g/除臭包/除濕包(8包組)",
+      "price": 279,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15612&cId=202",
+      "http_status": 200,
+      "stock": "out_of_stock",
+      "matched_control": "售完補貨中，貨到通知我",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        790,
+        279
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15537",
+      "name": "CoFeel 凱飛鮮烘豆哥斯大黎加牧童莊園中烘焙咖啡豆半磅+魔法瓶專利收納濾泡耳掛式兩用咖啡架",
+      "price": 789,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15537&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1619,
+        789
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15536",
+      "name": "CoFeel 凱飛鮮烘豆印尼蘇門答臘黃金曼特寧中深烘焙咖啡豆半磅+魔法瓶專利收納濾泡耳掛式兩用咖啡架",
+      "price": 979,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15536&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1829,
+        979
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15535",
+      "name": "CoFeel 凱飛鮮烘豆哥斯大黎加征服者中深烘焙咖啡豆半磅+魔法瓶專利收納濾泡耳掛式兩用咖啡架",
+      "price": 839,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15535&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1679,
+        839
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15533",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞耶加雪夫中烘焙咖啡豆半磅+魔法瓶專利收納濾泡耳掛式兩用咖啡架",
+      "price": 829,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15533&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1655,
+        829
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15532",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞耶加雪夫淺烘焙咖啡豆半磅+魔法瓶專利收納濾泡耳掛式兩用咖啡架",
+      "price": 829,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15532&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1655,
+        829
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15477",
+      "name": "CoFeel 凱飛鮮烘豆哥斯大黎加牧童莊園中烘焙咖啡豆一磅",
+      "price": 768,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15477&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1258,
+        768
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15476",
+      "name": "CoFeel 凱飛鮮烘豆哥斯大黎加牧童莊園中烘焙咖啡豆半磅",
+      "price": 399,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15476&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        629,
+        399
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15475",
+      "name": "CoFeel 凱飛鮮烘豆印尼蘇門答臘黃金曼特寧中深烘焙咖啡豆一磅",
+      "price": 899,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15475&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1678,
+        899
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15474",
+      "name": "CoFeel 凱飛鮮烘豆印尼蘇門答臘黃金曼特寧中深烘焙咖啡豆半磅",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15474&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        839,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15473",
+      "name": "CoFeel 凱飛鮮烘豆哥斯大黎加征服者中深烘焙咖啡豆一磅",
+      "price": 799,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15473&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1378,
+        799
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15472",
+      "name": "CoFeel 凱飛鮮烘豆哥斯大黎加征服者中深烘焙咖啡豆半磅",
+      "price": 499,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15472&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        689,
+        499
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15469",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞耶加雪夫中烘焙咖啡豆一磅",
+      "price": 849,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15469&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1330,
+        849
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15468",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞耶加雪夫中烘焙咖啡豆半磅",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15468&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        665,
+        449
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15467",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞耶加雪夫淺烘焙咖啡豆一磅",
+      "price": 849,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15467&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        1330,
+        849
+      ],
+      "price_verified": true
+    },
+    {
+      "id": "15466",
+      "name": "CoFeel 凱飛鮮烘豆衣索比亞耶加雪夫淺烘焙咖啡豆半磅",
+      "price": 449,
+      "url": "https://www.thelife.com.tw/product/detail.aspx?Id=15466&cId=202",
+      "http_status": 200,
+      "stock": "in_stock",
+      "matched_control": "立即購買",
+      "heading": "本月主打活動",
+      "detail_prices": [
+        665,
+        449
+      ],
+      "price_verified": true
+    }
+  ]
+}

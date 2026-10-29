@@ -3,6 +3,7 @@ import csv
 import os
 import html
 import subprocess
+import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://www.cofeel.com.tw"
@@ -235,6 +236,7 @@ def main():
             buy_url=esc(p.get("buy_url", "")),
             related_html=build_related(pid),
         )
+        page = re.sub(r"[ \t]+(?=\n)", "", page)
 
         out_path = os.path.join(out_dir, f"{pid}.html")
         with open(out_path, "w", encoding="utf-8") as f:
@@ -266,7 +268,7 @@ def main():
     generated_set = set(generated_ids)
     removed = []
     for fname in os.listdir(out_dir):
-        if not fname.endswith(".html"):
+        if not re.fullmatch(r"\d+\.html", fname):
             continue
         pid = fname[:-5]
         if pid not in generated_set:
@@ -277,6 +279,24 @@ def main():
     with open(sitemap_path, "w", encoding="utf-8") as f:
         for pid in generated_ids:
             f.write(f'  <url><loc>{SITE}/products/{pid}</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>\n')
+
+    # Keep the public sitemap aligned with the active TheLife catalogue.
+    public_sitemap_path = os.path.join(ROOT, "sitemap.xml")
+    if os.path.exists(public_sitemap_path):
+        with open(public_sitemap_path, encoding="utf-8") as f:
+            public_sitemap = f.read()
+        public_sitemap = re.sub(
+            r"\s*<url>\s*<loc>https://www\.cofeel\.com\.tw/products/\d+(?:\.html)?</loc>[\s\S]*?</url>",
+            "",
+            public_sitemap,
+        )
+        product_urls = "\n".join(
+            f'  <url><loc>{SITE}/products/{pid}</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>'
+            for pid in generated_ids
+        )
+        public_sitemap = public_sitemap.replace("</urlset>", f"{product_urls}\n</urlset>")
+        with open(public_sitemap_path, "w", encoding="utf-8") as f:
+            f.write(public_sitemap)
 
     print(f"Generated {len(feed_rows)} product pages in /products/")
     if removed:
