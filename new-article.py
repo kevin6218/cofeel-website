@@ -1,5 +1,5 @@
 """
-CoFeel 新文章發布工具
+CoFeeL 新文章發布工具
 用法：python new-article.py <檔名> "<文章標題>"
 範例：python new-article.py yirgacheffe-guide "耶加雪菲完整介紹"
 """
@@ -87,7 +87,7 @@ def main():
         print("請先確認文章 HTML 已放到 blog/ 資料夾")
         sys.exit(1)
 
-    print(f"\n🚀 CoFeel 發布新文章：{title}")
+    print(f"\n🚀 CoFeeL 發布新文章：{title}")
     print(f"   檔案：blog/{filename}\n")
 
     # Step 1: 更新 Sitemap

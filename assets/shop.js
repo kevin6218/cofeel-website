@@ -16,7 +16,7 @@
   };
   function renderCard(p) {
     const url = '/products/' + encodeURIComponent(p.id);
-    const name = p.name.replace(/^CoFeel\s*凱飛鮮烘豆\s*/i, '');
+    const name = p.name.replace(/^CoFeeL\s*凱飛鮮烘豆\s*/i, '');
     const reason = picks[state.pick]?.reason;
     return `<article class="card"><a class="card-img" href="${url}" tabindex="-1" aria-hidden="true"><img src="${escape(p.image)}" alt="" loading="lazy" decoding="async" width="300" height="300"></a><div class="card-body"><div class="card-cat">${escape(p.origin || p.category)}${p.roast?' · '+escape(p.roast):''}</div><a class="card-name" href="${url}">${escape(name)}</a><div class="card-flavors">${(p.flavors||[]).slice(0,3).map(f=>`<span class="ftag">${escape(f)}</span>`).join('')}</div><p class="card-weight">${escape(p.net_weight || p.size || '規格請見商品頁')}</p>${reason?`<p class="card-reason">${escape(reason)}</p>`:''}<div class="card-footer"><span class="card-price">${p.price?'NT$ '+Number(p.price).toLocaleString('zh-TW'):'查看價格'}</span><a class="card-buy" href="${url}">查看商品</a></div></div></article>`;
   }

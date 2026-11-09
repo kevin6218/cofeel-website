@@ -24,6 +24,10 @@ function auditedPrice(live) {
   return Math.min(...detailPrices);
 }
 
+function normalizeBrand(name) {
+  return String(name).replace(/(?<![A-Za-z])(CoFeeL|CoFeeL|CoFeeL|CoFeeL)(?![A-Za-z])/g, 'CoFeeL');
+}
+
 function inferCategory(name) {
   if (/禮盒|體驗課|燕窩|蜂蜜/.test(name)) return '禮盒/體驗';
   if (/生豆|一起烘咖啡/.test(name)) return '生豆';
@@ -50,7 +54,7 @@ function newProduct(live) {
   return {
     id: String(live.id),
     category: inferCategory(live.name),
-    name: live.name,
+    name: normalizeBrand(live.name),
     size,
     price: Number(live.price),
     origin: '',
@@ -86,11 +90,11 @@ for (const live of current.products) {
     added.push(merged);
   } else {
     if (Number(old.price) !== Number(verifiedLive.price)) priceChanged.push({ id: live.id, name: live.name, old: Number(old.price), current: Number(verifiedLive.price) });
-    if (old.name !== live.name) nameChanged.push({ id: live.id, old: old.name, current: live.name });
+    if (old.name !== normalizeBrand(live.name)) nameChanged.push({ id: live.id, old: old.name, current: normalizeBrand(live.name) });
     merged = {
       ...old,
       category: priorAddedIds.has(String(live.id)) ? inferCategory(live.name) : (old.category || inferCategory(live.name)),
-      name: live.name,
+      name: normalizeBrand(live.name),
       price: Number(verifiedLive.price),
       image: live.image || old.image,
       buy_url: live.buy_url

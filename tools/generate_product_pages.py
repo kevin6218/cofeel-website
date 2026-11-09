@@ -45,10 +45,10 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{title} | CoFeel 凱飛鮮烘豆</title>
+<title>{title} | CoFeeL 凱飛鮮烘豆</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
-<meta property="og:title" content="{title} | CoFeel 凱飛鮮烘豆">
+<meta property="og:title" content="{title} | CoFeeL 凱飛鮮烘豆">
 <meta property="og:description" content="{description}">
 <meta property="og:type" content="product">
 <meta property="og:url" content="{canonical}">
@@ -104,7 +104,7 @@ h1{{font-family:'Noto Serif TC',serif;font-size:1.6rem;font-weight:700;color:var
 </head>
 <body>
 <nav class="nav">
-  <a href="/" class="nav-logo"><img src="../images/logo.png" alt="CoFeel 凱飛鮮烘豆"></a>
+  <a href="/" class="nav-logo"><img src="../images/logo.png" alt="CoFeeL 凱飛鮮烘豆"></a>
   <a href="/#shop" class="nav-back">← 全部商品</a>
 </nav>
 <div class="wrap">
@@ -124,13 +124,13 @@ h1{{font-family:'Noto Serif TC',serif;font-size:1.6rem;font-weight:700;color:var
   </div>
 
   <div class="cofeel-note">
-    <strong>☕ CoFeel 凱飛堅持</strong>　SCA 認證職人接單鮮烘，1 克 1 元起秤重計價，每一包都是新鮮烘焙後出貨，歡迎到永安門市現場挑選試聞。
+    <strong>☕ CoFeeL 凱飛堅持</strong>　SCA 認證職人接單鮮烘，1 克 1 元起秤重計價，每一包都是新鮮烘焙後出貨，歡迎到永安門市現場挑選試聞。
   </div>
 
   <a href="/#shop" class="back-btn">← 回到全部商品</a>
 </div>
 <footer class="footer">
-  <img src="../images/logo-footer.png" alt="CoFeel 凱飛鮮烘豆">
+  <img src="../images/logo-footer.png" alt="CoFeeL 凱飛鮮烘豆">
   <p>© 2025 凱飛國際有限公司 · <a href="https://www.cofeel.com.tw" style="color:var(--muted)">cofeel.com.tw</a></p>
 </footer>
 </body>
@@ -153,7 +153,7 @@ def build_description(p):
     if p.get("flavors"):
         parts.append(f"風味：{'、'.join(p['flavors'])}")
     base = "、".join(parts)
-    return f"{p['name']}。{base}。CoFeel 凱飛鮮烘豆，SCA認證職人接單鮮烘，1克1元起秤重計價。"[:300]
+    return f"{p['name']}。{(base + '。') if base else ''}CoFeeL 凱飛鮮烘豆，SCA認證職人接單鮮烘，1克1元起秤重計價。"[:300]
 
 
 def build_spec_rows(p):
@@ -211,7 +211,7 @@ def main():
             "name": p["name"],
             "image": p.get("image", ""),
             "description": description,
-            "brand": {"@type": "Brand", "name": "CoFeel 凱飛鮮烘豆"},
+            "brand": {"@type": "Brand", "name": "CoFeeL 凱飛鮮烘豆"},
             "offers": {
                 "@type": "Offer",
                 "url": p.get("buy_url", canonical),
@@ -252,7 +252,7 @@ def main():
             "image_link": p.get("image", ""),
             "availability": "in stock",
             "price": f"{p.get('price','')} TWD",
-            "brand": "CoFeel 凱飛鮮烘豆",
+            "brand": "CoFeeL 凱飛鮮烘豆",
             "condition": "new",
             "identifier_exists": "no",
             "google_product_category": "Food, Beverages & Tobacco > Beverages > Coffee & Tea > Coffee",

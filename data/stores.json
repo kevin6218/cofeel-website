@@ -18,7 +18,28 @@
     "opens": "16:00",
     "closes": "20:00",
     "public": true,
-    "service": "秤重選購、現場試聞、客製烘焙諮詢",
+    "service": "現場拉豆秤重選購、現場試聞、客製烘焙諮詢",
+    "phone": "02-2248-9938"
+  },
+  {
+    "slug": "fuxiang",
+    "name": "CoFeeL 凱飛福祥門市",
+    "address": "新北市中和區福祥路148號",
+    "region": "新北市",
+    "locality": "中和區",
+    "street": "福祥路148號",
+    "hours": "週一至週五 09:30–17:30；週六、週日公休",
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:30",
+    "closes": "17:30",
+    "public": true,
+    "service": "自助拉豆秤重選購、現場選豆、多款自家拼配",
     "phone": "02-2248-9938"
   },
   {
